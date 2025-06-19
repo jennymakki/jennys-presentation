@@ -1,5 +1,6 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer";
+import Introduction from "@/components/introduction";
 
 export default function Home() {
   return (
@@ -8,9 +9,7 @@ export default function Home() {
         <Header />
       </header>
       <main className="flex flex-col gap-[32px] row-start-2 items-center">
-        <div>
-          <h1 className="font-roboto">Jennys sida</h1>
-        </div>
+        <Introduction/>
       </main>
       <footer className="row-start-3 bg-[#2090C8] w-full">
         <Footer />
