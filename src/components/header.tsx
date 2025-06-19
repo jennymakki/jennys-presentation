@@ -7,15 +7,15 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-[#2090C8] pt-10 h-24 flex items-center justify-between px-6">
+      <header className="bg-[#2090C8] pt-15 h-34 flex items-center justify-between px-6">
         <h1 className="font-roboto text-3xl text-white font-bold">
           Jenny Makki
         </h1>
 
-        <nav className="hidden md:flex space-x-8 text-white font-bold text-lg">
-          <a href="#" className="hover:text-blue-300 transition">HOME</a>
-          <a href="#" className="hover:text-blue-300 transition">PROJECTS</a>
-          <a href="#" className="hover:text-blue-300 transition">ABOUT ME</a>
+        <nav className="hidden md:flex space-x-8 text-white font-bold text-2xl">
+          <a href="#" className="hover:text-[#FF6F61] transition">HOME</a>
+          <a href="#" className="hover:text-[#FF6F61] transition">PROJECTS</a>
+          <a href="#" className="hover:text-[#FF6F61] transition">ABOUT ME</a>
         </nav>
 
         <button
