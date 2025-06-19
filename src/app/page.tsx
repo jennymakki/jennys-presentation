@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] bg-[#f5f5f5] items-center min-h-screen gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] bg-[#f5f5f5] items-center min-h-screen gap-16 font-roboto">
       <header className="row-start-1">
         <Header />
       </header>
