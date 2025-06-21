@@ -7,7 +7,8 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-[#2090C8] pt-15 h-34 flex items-center justify-between px-6">
+      <header className="bg-[#2090C8] h-24 flex items-center justify-center">
+      <div className="w-full max-w-5xl mx-auto px-6 flex items-center justify-between">
         <h1 className="font-roboto text-3xl text-white font-bold">
           Jenny Makki
         </h1>
@@ -39,6 +40,7 @@ export default function Header() {
             }`}
           />
         </button>
+        </div>
       </header>
 
       <div

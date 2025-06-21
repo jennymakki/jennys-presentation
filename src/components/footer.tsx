@@ -15,7 +15,7 @@ export default function Footer() {
           className="flex items-center gap-1 hover:underline"
         >
           <Image
-            src="github.svg"
+            src="/github.svg"
             alt="GitHub icon"
             width={42}
             height={42}
@@ -29,7 +29,7 @@ export default function Footer() {
           className="flex items-center gap-1 hover:underline"
         >
           <Image
-            src="linkedin.svg"
+            src="/linkedin.svg"
             alt="LinkedIn icon"
             width={60}
             height={60}

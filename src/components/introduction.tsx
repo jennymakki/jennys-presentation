@@ -11,7 +11,7 @@ export default function Introduction() {
           className="object-cover"
         />
       </div>
-      <div className="bg-[#EBEBEB] rounded-2xl md:ml-5 p-6 mb-10 ml-10 mr-10 shadow-md max-w-xl text-black">
+      <div className="bg-[#EBEBEB] rounded-2xl md:ml-5 p-6 ml-10 mr-10 shadow-md max-w-md text-black">
         <p>
         Hi! I am Jenny, a full stack developer who loves building clean, user-friendly web apps. I enjoy working with both front-end and back-end tools to bring ideas to life.
         </p>
