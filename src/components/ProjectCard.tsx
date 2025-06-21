@@ -7,6 +7,12 @@ type Project = {
   link: string;
   liveDemo?: string;
   slug: string;
+  shortDescription: string
+  tags: string[]
+  goal: string
+  keyFeatures: string[]
+  snapshots: { imageUrl: string; description: string }[]
+  roleAndLearning: string
 };
 
 export const ProjectCard = ({ project }: { project: Project }) => (
