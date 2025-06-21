@@ -2,10 +2,10 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Introduction from "@/components/introduction";
+import Contact from "@/components/contact"
 import { projects } from "../data/projects";
 import { ProjectCard } from "@/components/ProjectCard";
 import Skills from "@/components/Skills";
-import { Mail, Github, Linkedin } from "lucide-react";
 
 export default function Home() {
   const limitedProjects = projects.slice(0, 6);
@@ -66,34 +66,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="items-center mt-10">
-          <h6 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-2">
-            Contact Information
-          </h6>
-          <div className="max-w-xl bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
-            <div className="flex justify-center gap-6 pt-3 pb-3">
-              <a href="mailto:jjennyeklundd@hotmail.com" aria-label="Email">
-                <Mail className="text-[#2090C8] hover:text-[#FF6F61] w-12 h-12" />
-              </a>
-              <a
-                href="https://github.com/jennymakki"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                <Github className="text-[#2090C8] hover:text-[#FF6F61] w-12 h-12" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jenny-makki-197614210/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="text-[#2090C8] hover:text-[#FF6F61] w-12 h-12" />
-              </a>
-            </div>
-          </div>
-        </div>
+        <Contact/>
       </section>
       <footer className="row-start-4 mt-6 bg-[#2090C8] w-full">
         <Footer />
