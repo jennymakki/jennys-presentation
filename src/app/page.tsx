@@ -62,8 +62,7 @@ export default function Home() {
           </h4>
           <div className="max-w-xl bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
             <p className="text-center text-md">
-              I am currently working on this website. I've chosen to use Next.js
-              and Typescript which I find easy and smooth to work with.
+              I'm about to begin building a weather application that fetches real-time data from a weather API.
             </p>
           </div>
         </div>
