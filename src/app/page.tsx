@@ -5,7 +5,7 @@ import Introduction from "@/components/introduction";
 import { projects } from "../data/projects";
 import { ProjectCard } from "@/components/ProjectCard";
 import Skills from "@/components/Skills";
-import { skills } from "@/data/skills";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 export default function Home() {
   const limitedProjects = projects.slice(0, 6);
@@ -36,21 +36,66 @@ export default function Home() {
             See All Projects
           </button>
         </div>
-        <div className="items-center mt-10">
-          <h4 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-2">
-            Currently working on</h4>
-            <div className="max-w-xl bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
-            <p className="text-center text-md">I am currently working on this website. I've chosen to use Next.js and Typescript which I find easy and smooth to work with.</p>
-            </div>
-        </div>
         <div className="flex flex-col items-center mt-10 px-4">
-          <h3 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-6">
+          <h5 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-6">
             Skills and Technologies
-          </h3>
+          </h5>
           <Skills />
         </div>
+        <div className="flex flex-col items-center mt-10 px-4">
+          <h6 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-6">
+            Testimonials
+          </h6>
+          <div className="max-w-xl bg-[#2090C8] rounded-2xl shadow-md p-6 mx-auto">
+            <p className="text-center text-white text-md">
+              "It’s been a pleasure working with Jenny. She brings a positive
+              energy to the team, consistently demonstrates attention to detail,
+              and is always focused on achieving results." - Henrik Mattsson,
+              Project Collaborator
+            </p>
+          </div>
+        </div>
+        <div className="items-center mt-10">
+          <h4 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-2">
+            Currently working on
+          </h4>
+          <div className="max-w-xl bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
+            <p className="text-center text-md">
+              I am currently working on this website. I've chosen to use Next.js
+              and Typescript which I find easy and smooth to work with.
+            </p>
+          </div>
+        </div>
+        <div className="items-center mt-10">
+          <h6 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-2">
+            Contact Information
+          </h6>
+          <div className="max-w-xl bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
+            <div className="flex justify-center gap-6 pt-3 pb-3">
+              <a href="mailto:jjennyeklundd@hotmail.com" aria-label="Email">
+                <Mail className="text-[#2090C8] hover:text-[#FF6F61] w-12 h-12" />
+              </a>
+              <a
+                href="https://github.com/jennymakki"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <Github className="text-[#2090C8] hover:text-[#FF6F61] w-12 h-12" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jenny-makki-197614210/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="text-[#2090C8] hover:text-[#FF6F61] w-12 h-12" />
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
-      <footer className="row-start-4 bg-[#2090C8] w-full">
+      <footer className="row-start-4 mt-6 bg-[#2090C8] w-full">
         <Footer />
       </footer>
     </div>

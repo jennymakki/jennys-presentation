@@ -1,4 +1,6 @@
-import Image from "next/image";
+"use client";
+
+import { Mail, Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -8,34 +10,25 @@ export default function Footer() {
       </div>
 
       <div className="flex gap-4 items-center">
-        <a
-          href="https://github.com/jennymakki"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1 hover:underline"
-        >
-          <Image
-            src="/github.svg"
-            alt="GitHub icon"
-            width={42}
-            height={42}
-            aria-hidden
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jenny-makki-197614210/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1 hover:underline"
-        >
-          <Image
-            src="/linkedin.svg"
-            alt="LinkedIn icon"
-            width={60}
-            height={60}
-            aria-hidden
-          />
-        </a>
+      <a href="mailto:jjennyeklundd@hotmail.com" aria-label="Email">
+            <Mail className="w-8 h-8 text-white hover:text-[#FF6F61]" />
+          </a>
+          <a
+            href="https://github.com/jennymakki"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <Github className="w-8 h-8 text-white hover:text-[#FF6F61]" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jenny-makki-197614210/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="w-8 h-8 text-white hover:text-[#FF6F61]" />
+          </a>
       </div>
 
       <div className="text-center md:text-right">
