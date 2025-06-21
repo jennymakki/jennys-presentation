@@ -28,9 +28,9 @@ export default function About() {
           <div className="flex-1 bg-[#EBEBEB] p-6 rounded-2xl shadow-md">
             <h3 className="text-[#2090C8] font-bold text-lg">What I do</h3>
             <p className="text-md text-gray-800">
-              I'm currently studying full-stack development with a focus on Java
+              I am currently studying full-stack development with a focus on Java
               and JavaScript. My training includes hands-on projects using
-              technologies like React and Node.js. I'm gaining experience in
+              technologies like React and Node.js. I am gaining experience in
               agile, team-based environments.
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function About() {
           </h4>
           <p className="text-md text-gray-800">
             I enjoy exploring design tools and building fun side projects to
-            improve my skills. I'm also deeply passionate about
+            improve my skills. I am also deeply passionate about
             accessibility—creating inclusive, user-friendly experiences that
             work for everyone is something I truly care about.
           </p>

@@ -31,11 +31,6 @@ export const projects = [
         description:
           "Admin section where the workers at the movie theatre can add offers and remove them. The offers are stored in MongoDB.",
       },
-      {
-        imageUrl: "/snapshots/KinoCard.png",
-        description:
-          "Movie cards on the tickets-page where future showings are displayed and some information about the movie.",
-      },
     ],
     roleAndLearning:
       "I worked as part of a five-person team to develop this project. I collaborated closely on maintaining UI consistency and participated actively in code reviews. Working effectively in a Git-based team environment, I used Cloudinary to ensure secure and scalable image uploads. I also handled conditional logic for features such as membership tiers, while promoting clear communication and shared documentation within the team.",

@@ -6,6 +6,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import BackButton from "@/components/BackButton";
 import { Github, Globe } from "lucide-react";
+import Image from "next/image";
 
 type ProjectPageProps = {
   params: Promise<{ slug: string }>;
@@ -64,11 +65,15 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   key={idx}
                   className="rounded bg-[#ebebeb] overflow-hidden shadow-md"
                 >
-                  <img
-                    src={imageUrl}
-                    alt={`Snapshot ${idx + 1}`}
-                    className="w-full"
-                  />
+                  <div className="relative h-130 w-full">
+                    <Image
+                      src={imageUrl}
+                      alt={`Snapshot ${idx + 1}`}
+                      fill
+                      style={{ objectFit: "cover" }}
+                      sizes="(max-width: 768px) 100vw, 1000px"
+                    />
+                  </div>
                   <p className="p-3">{description}</p>
                 </div>
               ))}

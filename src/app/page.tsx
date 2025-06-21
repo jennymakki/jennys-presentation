@@ -49,9 +49,9 @@ export default function Home() {
           </h6>
           <div className="max-w-xl bg-[#ebebeb] rounded-2xl shadow-md p-6 mx-auto">
             <p className="text-center text-md">
-              "It’s been a pleasure working with Jenny. She brings a positive
+              It has been a pleasure working with Jenny. She brings a positive
               energy to the team, consistently demonstrates attention to detail,
-              and is always focused on achieving results." - Henrik Mattsson,
+              and is always focused on achieving results. - Henrik Mattsson,
               Project Collaborator
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
           </h4>
           <div className="max-w-xl bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
             <p className="text-center text-md">
-              I'm about to begin building a weather application that fetches real-time data from a weather API.
+              I am about to begin building a weather application that fetches real-time data from a weather API.
             </p>
           </div>
         </div>
