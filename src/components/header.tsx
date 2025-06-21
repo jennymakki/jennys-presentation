@@ -16,7 +16,7 @@ export default function Header() {
         <nav className="hidden md:flex space-x-8 text-white font-bold text-2xl">
           <a href="/" className="hover:text-[#FF6F61] transition">HOME</a>
           <a href="/projects" className="hover:text-[#FF6F61] transition">PROJECTS</a>
-          <a href="#" className="hover:text-[#FF6F61] transition">ABOUT ME</a>
+          <a href="/about" className="hover:text-[#FF6F61] transition">ABOUT ME</a>
         </nav>
 
         <button
@@ -60,7 +60,7 @@ export default function Header() {
         <ul className="mt-32 p-6 text-2xl space-y-10 text-white font-bold">
           <li><a href="/" className="hover:text-blue-300">HOME</a></li>
           <li><a href="/projects" className="hover:text-blue-300">PROJECTS</a></li>
-          <li><a href="#" className="hover:text-blue-300">ABOUT ME</a></li>
+          <li><a href="/about" className="hover:text-blue-300">ABOUT ME</a></li>
         </ul>
       </nav>
     </>

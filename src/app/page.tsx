@@ -46,8 +46,8 @@ export default function Home() {
           <h6 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-6">
             Testimonials
           </h6>
-          <div className="max-w-xl bg-[#2090C8] rounded-2xl shadow-md p-6 mx-auto">
-            <p className="text-center text-white text-md">
+          <div className="max-w-xl bg-[#ebebeb] rounded-2xl shadow-md p-6 mx-auto">
+            <p className="text-center text-md">
               "It’s been a pleasure working with Jenny. She brings a positive
               energy to the team, consistently demonstrates attention to detail,
               and is always focused on achieving results." - Henrik Mattsson,
