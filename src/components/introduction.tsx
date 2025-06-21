@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Introduction() {
   return (
     <div className="flex flex-col md:flex-row items-center gap-6 pt-6">
-      <div className="w-60 flex-shrink-0 h-60 md:w-76 md:ml-10 md:h-76 relative rounded-full overflow-hidden">
+      <div className="w-60 h-60 md:w-72 md:h-72 md:ml-10 relative rounded-full overflow-hidden">
         <Image
           src="/JennyMakki.png"
           alt="Jenny Makki"

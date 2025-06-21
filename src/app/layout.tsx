@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import {Roboto} from 'next/font/google';
+import { Roboto } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,14 +14,33 @@ const geistMono = Geist_Mono({
 });
 
 const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-roboto',
-})
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-roboto",
+});
 
 export const metadata: Metadata = {
-  title: "Jennys Presentation",
-  description: "Using Roboto with Next.js",
+  title: "Jenny Makki",
+  description: "Portfolio and projects by Jenny Makki",
+  metadataBase: new URL("https://jennymakki.vercel.app/"),
+  openGraph: {
+    title: "Jenny Makki",
+    description: "Portfolio and projects by Jenny Makki",
+    images: [
+      {
+        url: "/Meta.png",
+        width: 1200,
+        height: 630,
+        alt: "Jenny Makki Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jenny Makki",
+    description: "Portfolio and projects by Jenny Makki",
+    images: ["/Meta.png"],
+  },
 };
 
 export default function RootLayout({
