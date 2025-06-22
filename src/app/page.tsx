@@ -3,7 +3,6 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Introduction from "@/components/introduction";
 import Contact from "@/components/contact";
-import CV from "@/components/CV";
 import { projects } from "../data/projects";
 import { ProjectCard } from "@/components/ProjectCard";
 import Skills from "@/components/Skills";
@@ -67,7 +66,6 @@ export default function Home() {
           </div>
         </div>
         <Contact />
-        <CV />
       </section>
       <footer className="row-start-4 mt-6 bg-[#2090C8] w-full">
         <Footer />

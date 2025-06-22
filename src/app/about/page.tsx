@@ -1,7 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Contact from "@/components/contact";
-import CV from "@/components/CV";
 import Image from "next/image";
 
 export default function About() {
@@ -57,7 +56,6 @@ export default function About() {
           </p>
         </div>
         <Contact />
-        <CV/>
       </main>
 
       <footer className="row-start-4 bg-[#2090C8] w-full">
