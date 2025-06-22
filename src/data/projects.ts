@@ -22,7 +22,7 @@ export const projects = [
     ],
     snapshots: [
       {
-        imageUrl: "/snapshots/kinoMember.png",
+        imageUrl: "/snapshots/KinoMember.png",
         description:
           "Membership page created using Tailwind. The profile picture can be changed and is stored in Cloudinary. The tickets the member buys is displayed and the amount of tickets will decide the membership level.",
       },
@@ -112,7 +112,7 @@ export const projects = [
     title: "To Do App",
     description:
       "This is a simple and intuitive task manager built with HTML, CSS, and JavaScript. It allows users to add new tasks, mark them as complete, and delete them as needed. The interface is clean and responsive, making it easy to stay organized across devices.",
-    imageUrl: "/Todo.png",
+    imageUrl: "/ToDo.png",
     link: "https://github.com/jennymakki/To-do-applikation",
     liveDemo: "https://jennymakki.github.io/To-do-applikation/",
     slug: "To-do-app",
