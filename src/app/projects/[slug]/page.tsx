@@ -65,13 +65,13 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   key={idx}
                   className="rounded bg-[#ebebeb] overflow-hidden shadow-md"
                 >
-                  <div className="relative h-130 w-full">
+                  <div className="relative aspect-[16/9] w-full">
                     <Image
                       src={imageUrl}
                       alt={`Snapshot ${idx + 1}`}
                       fill
-                      style={{ objectFit: "cover" }}
-                      sizes="(max-width: 768px) 100vw, 1000px"
+                      style={{ objectFit: "contain" }}
+                      sizes="(max-width: 768px) 100vw, 8000px"
                     />
                   </div>
                   <p className="p-3">{description}</p>
