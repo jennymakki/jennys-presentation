@@ -54,6 +54,18 @@ export default function Home() {
               Project Collaborator
             </p>
           </div>
+          <div className="max-w-xl bg-[#ebebeb] rounded-2xl shadow-md p-6 mx-auto">
+            <p className="text-center text-md">
+              Working with Jenny has been incredibly inspiring. She brings
+              outstanding organization and structure to everything she does,
+              which helps the whole team stay focused and efficient. Her energy
+              and positivity are contagious and she constantly contributes
+              freash, creative ideas. With a sharp eye for color, form, and
+              design, she elevates every project visually and conceptually. She
+              has a true creative force and is an invaluable member of any team. -
+              Patrik Eriksson, Project Collaborator
+            </p>
+          </div>
         </div>
         <div className="items-center mt-10">
           <h4 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-2">
@@ -61,7 +73,8 @@ export default function Home() {
           </h4>
           <div className="max-w-xl bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
             <p className="text-center text-md">
-              I am about to begin building a weather application that fetches real-time data from a weather API.
+              I am about to begin building a weather application that fetches
+              real-time data from a weather API.
             </p>
           </div>
         </div>
