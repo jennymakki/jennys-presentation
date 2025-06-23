@@ -54,7 +54,7 @@ export default function Home() {
               Project Collaborator
             </p>
           </div>
-          <div className="max-w-xl bg-[#ebebeb] rounded-2xl shadow-md p-6 mx-auto">
+          <div className="max-w-xl bg-[#ebebeb] rounded-2xl mt-10 shadow-md p-6 mx-auto">
             <p className="text-center text-md">
               Working with Jenny has been incredibly inspiring. She brings
               outstanding organization and structure to everything she does,
