@@ -60,7 +60,7 @@ export default function Home() {
               outstanding organization and structure to everything she does,
               which helps the whole team stay focused and efficient. Her energy
               and positivity are contagious and she constantly contributes
-              freash, creative ideas. With a sharp eye for color, form, and
+              fresh, creative ideas. With a sharp eye for color, form, and
               design, she elevates every project visually and conceptually. She
               has a true creative force and is an invaluable member of any team. -
               Patrik Eriksson, Project Collaborator
