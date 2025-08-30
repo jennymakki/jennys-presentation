@@ -73,8 +73,7 @@ export default function Home() {
           </h4>
           <div className="max-w-xl bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
             <p className="text-center text-md">
-              I am about to begin building a weather application that fetches
-              real-time data from a weather API.
+            Developing a turn-based Dungeon Crawler in Java using OOP principles and a CLI interface. I’m also building a Java product management app with Java 8 streams and JUnit 5, following best practices for testing and version control, including pair programming with GitHub co-authored commits. 
             </p>
           </div>
         </div>
