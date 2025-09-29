@@ -1,7 +1,7 @@
 export const skills =
     {     
-        frontend: ["React", "Next.js", "Tailwind", "HTML", "CSS", "TypeScript", "EJS", "JavaScript", "Java"],
-        backend: ["MongoDB", "Express", "Node.js", "REST API"],
+        frontend: ["React", "Next.js", "Tailwind", "HTML", "CSS", "TypeScript", "EJS", "JavaScript"],
+        backend: ["MongoDB", "Express", "Node.js", "REST API", "CMS-adapter", "Java"],
         tools: ["Git", "Figma", "VSCode", "IntelliJ", "Docker", "Cypress", "Jest"],
         softSkills: ["Agile", "Communication", "Problem-solving", "Collaboration", "Attention to Detail"]
     };
