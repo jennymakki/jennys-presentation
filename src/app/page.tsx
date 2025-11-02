@@ -36,13 +36,13 @@ export default function Home() {
             See All Projects
           </button>
         </div>
-        <div className="flex flex-col items-center mt-10 px-4">
+        <div className="flex flex-col text-gray-800 items-center mt-10 px-4">
           <h5 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-6">
             Skills and Technologies
           </h5>
           <Skills />
         </div>
-        <div className="flex flex-col items-center mt-10 px-4">
+        <div className="flex flex-col text-gray-800 items-center mt-10 px-4">
           <h6 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-6">
             Testimonials
           </h6>
@@ -54,7 +54,7 @@ export default function Home() {
               Project Collaborator
             </p>
           </div>
-          <div className="max-w-xl bg-[#ebebeb] rounded-2xl mt-10 shadow-md p-6 mx-auto">
+          <div className="max-w-xl bg-[#ebebeb] text-gray-800 rounded-2xl mt-10 shadow-md p-6 mx-auto">
             <p className="text-center text-md">
               Working with Jenny has been incredibly inspiring. She brings
               outstanding organization and structure to everything she does,
@@ -71,7 +71,7 @@ export default function Home() {
           <h4 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-2">
             Currently working on
           </h4>
-          <div className="max-w-xl bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
+          <div className="max-w-xl text-gray-800 bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
             <p className="text-center text-md">
             Developing a Spring Boot REST API with JPA, MySQL, and Thymeleaf. The project includes Dockerized database setup, secured endpoints with Spring Security, and comprehensive testing of REST controllers and access control. 
             </p>
