@@ -73,7 +73,7 @@ export default function Home() {
           </h4>
           <div className="max-w-xl bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
             <p className="text-center text-md">
-            Developing a turn-based Dungeon Crawler in Java using OOP principles and a CLI interface. I’m also building a Java product management app with Java 8 streams and JUnit 5, following best practices for testing and version control, including pair programming with GitHub co-authored commits. 
+            Developing a Spring Boot REST API with JPA, MySQL, and Thymeleaf. The project includes Dockerized database setup, secured endpoints with Spring Security, and comprehensive testing of REST controllers and access control. 
             </p>
           </div>
         </div>
