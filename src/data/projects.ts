@@ -1,4 +1,42 @@
 export const projects = [
+
+  {
+    title: "Grocery Helper",
+    description:
+      "Grocery Helper is a full-stack web application that helps users manage recipes and grocery lists. Users can create grocery lists manually or add ingredients directly from recipes. The app features secure authentication, recipe management, and seamless integration between recipes and grocery lists.",
+    imageUrl: "/GroceryHelper.png",
+    link: "https://github.com/jennymakki/grocery-helper-examensarbete",
+    liveDemo: "https://grocery-helper-examensarbete.vercel.app",
+    slug: "grocery-helper",
+    shortDescription:
+      "A full-stack recipe and grocery list manager with Google authentication.",
+    tags: ["Next.js", "Cloudinary", "MongoDB", "NextAuth", "Full-Stack", "Responsive"],
+    goal: "The goal of this project was to create a personal productivity tool for managing recipes and grocery shopping. The focus was on integrating recipe creation with grocery list management, providing a smooth and flexible user experience while ensuring secure, user-specific data storage.",
+    keyFeatures: [
+      "Google OAuth authentication with NextAuth.js",
+      "Create, edit, and delete recipes",
+      "Manage grocery lists manually or via recipes",
+      "Check/uncheck items while shopping",
+      "Seamless recipe-to-grocery list integration",
+      "Prevents duplicate items in grocery lists",
+      "Responsive design for mobile and desktop",
+    ],
+    snapshots: [
+      {
+        imageUrl: "/snapshots/Recipecard.png",
+        description:
+          "Recipe card allowing users to upload images, link to the recipe, list ingredients, and generate a shopping list directly from the recipe."
+      },
+      {
+        imageUrl: "/snapshots/Grocerylistcard.png",
+        description:
+          "Grocery list interface where users can edit the list title, add or remove items, and automatically combine quantities for duplicate items with the same unit."
+      },
+    ],
+    roleAndLearning:
+      "I built the project as a full-stack application using Next.js with server-side API routes and MongoDB for storage. I implemented Google authentication with NextAuth.js and focused on creating a seamless integration between recipes and grocery lists. This project strengthened my skills in full-stack development, user authentication, state management, and database design."
+  },
+
   {
     title: "Kino Movie Theatre",
     description:

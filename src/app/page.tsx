@@ -73,7 +73,7 @@ export default function Home() {
           </h4>
           <div className="max-w-xl text-gray-800 bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
             <p className="text-center text-md">
-            Developing a Spring Boot REST API with JPA, MySQL, and Thymeleaf. The project includes Dockerized database setup, secured endpoints with Spring Security, and comprehensive testing of REST controllers and access control. 
+            Currently wrapping up my exam project, Grocery Helper, and looking forward to starting my praktik in February. Excited to apply my skills in full-stack development and continue building impactful web applications.
             </p>
           </div>
         </div>
