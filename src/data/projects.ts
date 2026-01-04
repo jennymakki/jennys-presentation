@@ -4,7 +4,7 @@ export const projects = [
     title: "Grocery Helper",
     description:
       "Grocery Helper is a full-stack web application that helps users manage recipes and grocery lists. Users can create grocery lists manually or add ingredients directly from recipes. The app features secure authentication, recipe management, and seamless integration between recipes and grocery lists.",
-    imageUrl: "/GroceryHelper.png",
+    imageUrl: "/Groceryhelper.png",
     link: "https://github.com/jennymakki/grocery-helper-examensarbete",
     liveDemo: "https://grocery-helper-examensarbete.vercel.app",
     slug: "grocery-helper",
