@@ -263,6 +263,7 @@ export const projects = [
       "Clean code practices",
       "Problem-solving with Java",
     ],
+    snapshots: [],
     roleAndLearning:
       "I completed this exercise independently as part of structured Java practice. It strengthened my understanding of object-oriented programming, class design, and clean code structure.",
   },
@@ -270,7 +271,7 @@ export const projects = [
     title: "Java Exercise – Collections & Logic",
     description:
       "A Java exercise focused on working with collections, control flow, and logical problem solving. This task highlights how to handle data through arrays/lists and implement solutions using core Java constructs.",
-    imageUrl: "/Exercise2.png", // skärmdump från IDE
+    imageUrl: "/Exercise2.png",
     link: "https://github.com/fungover/exercise2025/pull/64",
     liveDemo: "",
     slug: "java-exercise-collections-logic",
@@ -284,6 +285,7 @@ export const projects = [
       "Problem solving in backend context",
       "Clear and maintainable structure",
     ],
+    snapshots: [],
     roleAndLearning:
       "I completed this task independently as part of strengthening core Java skills. The exercise improved my ability to work with collections and logical flows in backend development.",
   },
@@ -305,6 +307,7 @@ export const projects = [
       "Backend logic and problem solving",
       "Clean and readable code",
     ],
+    snapshots: [],
     roleAndLearning:
       "This exercise was completed independently to deepen my understanding of algorithm design and data handling in Java. It improved my problem-solving skills and backend programming confidence.",
   },
