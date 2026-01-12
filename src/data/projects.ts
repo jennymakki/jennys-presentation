@@ -1,5 +1,4 @@
 export const projects = [
-
   {
     title: "Grocery Helper",
     description:
@@ -10,7 +9,14 @@ export const projects = [
     slug: "grocery-helper",
     shortDescription:
       "A full-stack recipe and grocery list manager with Google authentication.",
-    tags: ["Next.js", "Cloudinary", "MongoDB", "NextAuth", "Full-Stack", "Responsive"],
+    tags: [
+      "Next.js",
+      "Cloudinary",
+      "MongoDB",
+      "NextAuth",
+      "Full-Stack",
+      "Responsive",
+    ],
     goal: "The goal of this project was to create a personal productivity tool for managing recipes and grocery shopping. The focus was on integrating recipe creation with grocery list management, providing a smooth and flexible user experience while ensuring secure, user-specific data storage.",
     keyFeatures: [
       "Google OAuth authentication with NextAuth.js",
@@ -25,16 +31,16 @@ export const projects = [
       {
         imageUrl: "/snapshots/Recipecard.png",
         description:
-          "Recipe card allowing users to upload images, link to the recipe, list ingredients, and generate a shopping list directly from the recipe."
+          "Recipe card allowing users to upload images, link to the recipe, list ingredients, and generate a shopping list directly from the recipe.",
       },
       {
         imageUrl: "/snapshots/Grocerylistcard.png",
         description:
-          "Grocery list interface where users can edit the list title, add or remove items, and automatically combine quantities for duplicate items with the same unit."
+          "Grocery list interface where users can edit the list title, add or remove items, and automatically combine quantities for duplicate items with the same unit.",
       },
     ],
     roleAndLearning:
-      "I built the project as a full-stack application using Next.js with server-side API routes and MongoDB for storage. I implemented Google authentication with NextAuth.js and focused on creating a seamless integration between recipes and grocery lists. This project strengthened my skills in full-stack development, user authentication, state management, and database design."
+      "I built the project as a full-stack application using Next.js with server-side API routes and MongoDB for storage. I implemented Google authentication with NextAuth.js and focused on creating a seamless integration between recipes and grocery lists. This project strengthened my skills in full-stack development, user authentication, state management, and database design.",
   },
 
   {
@@ -147,26 +153,64 @@ export const projects = [
       "I was responsible for building the site structure and templating logic using EJS. I also wrote and styled the content pages, focusing on layout clarity and responsiveness. This project helped reinforce backend templating and server-side rendering concepts.",
   },
   {
-    title: "To Do App",
+    title: "To Do App – Frontend Version (v1)",
     description:
-      "This is a simple and intuitive task manager built with HTML, CSS, and JavaScript. It allows users to add new tasks, mark them as complete, and delete them as needed. The interface is clean and responsive, making it easy to stay organized across devices.",
+      "This is the first version of a To Do application, built as a frontend-focused project using HTML, CSS, and vanilla JavaScript. The goal was to create a clean and intuitive task manager while deepening my understanding of DOM manipulation, UI state, and event handling without relying on frameworks.",
     imageUrl: "/Todolist.png",
     link: "https://github.com/jennymakki/To-do-applikation",
     liveDemo: "https://jennymakki.github.io/To-do-applikation/",
     slug: "To-do-app",
     shortDescription:
-      "A clean and functional task management app made with vanilla JavaScript.",
-    tags: ["JavaScript", "HTML", "CSS", "Productivity", "DOM Manipulation"],
-    goal: "To build a lightweight, no-login to-do application that works on both desktop and mobile. It should support basic task functionality while remaining easy to use.",
+      "Frontend-focused To Do application built with vanilla JavaScript (Version 1).",
+    tags: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Frontend",
+      "DOM Manipulation",
+      "Versioned Project",
+    ],
+    goal: "To build a lightweight, no-login to-do application that works on both desktop and mobile, while focusing on core frontend concepts such as DOM manipulation, event handling, and UI state management.",
     keyFeatures: [
       "Add, complete, and delete tasks",
-      "Interactive UI with animations",
-      "Local state-based task tracking",
+      "Interactive UI with basic animations",
+      "Client-side state management",
       "Responsive mobile-first design",
     ],
     snapshots: [],
     roleAndLearning:
-      "I built the entire app using vanilla JavaScript, focusing on DOM manipulation and event handling. This helped strengthen my understanding of basic frontend development and UI state logic without relying on frameworks.",
+      "I built the entire application independently. This project strengthened my understanding of frontend fundamentals and helped me identify limitations in a purely client-side solution, which later motivated me to rebuild the application as a fullstack version using Java and Spring Boot.",
+  },
+  {
+    title: "To Do App – Fullstack Version (Java, v2)",
+    description:
+      "This is a fullstack rebuild of my earlier frontend-only To Do application. The project was rebuilt to add backend logic, persistence, and authentication, and to explore how a scalable application can be structured using Java and Spring Boot.",
+    imageUrl: "/Todolist2.png",
+    link: "https://github.com/fungover/exercise2025/pull/204",
+    slug: "To-do-app-java",
+    shortDescription:
+      "Fullstack To Do application built with Java and Spring Boot as a rebuild of an earlier frontend version.",
+    tags: [
+      "Java",
+      "Spring Boot",
+      "REST API",
+      "JPA",
+      "Spring Security",
+      "Backend",
+      "Fullstack",
+    ],
+    goal: "To rebuild an existing frontend application as a fullstack solution by adding a backend, database persistence, authentication, and a clear application structure using Java and Spring Boot.",
+    keyFeatures: [
+      "REST API built with Spring Boot",
+      "Persistent data storage using JPA and a relational database",
+      "User authentication and authorization with Spring Security",
+      "Layered architecture (controllers, services, repositories)",
+      "Input validation and error handling",
+      "Basic testing and development best practices",
+    ],
+    snapshots: [],
+    roleAndLearning:
+      "I rebuilt the application independently, using this project to deepen my understanding of backend development, RESTful APIs, authentication, and application architecture. The project helped me move from a purely frontend mindset to thinking in terms of data flow, security, and scalability.",
   },
   {
     title: "Hacker Escape Room",
@@ -200,5 +244,68 @@ export const projects = [
     ],
     roleAndLearning:
       "I contributed to building the filtering logic and helped style the UI according to the theme. I collaborated with my team and used GitHub to give and recieve feedback.",
+  },
+  {
+    title: "Java Exercise – Object Manipulation",
+    description:
+      "A Java exercise focused on object-oriented programming concepts and structured logic. This task demonstrates how to design and manipulate objects in Java while following clean code principles.",
+    imageUrl: "/Exercise1.png",
+    link: "https://github.com/fungover/exercise2025/pull/40",
+    liveDemo: "",
+    slug: "java-exercise-object-manipulation",
+    shortDescription:
+      "An exercise showing object-oriented design and data manipulation in Java.",
+    tags: ["Java", "OOP", "Backend", "Clean Code"],
+    goal: "To practice object-oriented design and core Java principles by creating and manipulating structured data models.",
+    keyFeatures: [
+      "Object-oriented design and implementation",
+      "Data structuring and manipulation",
+      "Clean code practices",
+      "Problem-solving with Java",
+    ],
+    roleAndLearning:
+      "I completed this exercise independently as part of structured Java practice. It strengthened my understanding of object-oriented programming, class design, and clean code structure.",
+  },
+  {
+    title: "Java Exercise – Collections & Logic",
+    description:
+      "A Java exercise focused on working with collections, control flow, and logical problem solving. This task highlights how to handle data through arrays/lists and implement solutions using core Java constructs.",
+    imageUrl: "/Exercise2.png", // skärmdump från IDE
+    link: "https://github.com/fungover/exercise2025/pull/64",
+    liveDemo: "",
+    slug: "java-exercise-collections-logic",
+    shortDescription:
+      "A backend-focused Java exercise demonstrating collections and logic handling.",
+    tags: ["Java", "Collections", "Backend", "Problem Solving"],
+    goal: "To practice working with Java collections and logic statements while solving structured backend problems.",
+    keyFeatures: [
+      "Java collections handling",
+      "Conditional logic and loops",
+      "Problem solving in backend context",
+      "Clear and maintainable structure",
+    ],
+    roleAndLearning:
+      "I completed this task independently as part of strengthening core Java skills. The exercise improved my ability to work with collections and logical flows in backend development.",
+  },
+  {
+    title: "Java Exercise – Algorithms & Structures",
+    description:
+      "A Java exercise centered around implementing algorithms and data structure logic, with emphasis on efficient solutions and clean implementation. This task deals with problem-solving patterns common in backend projects.",
+    imageUrl: "/Exercise3.png",
+    link: "https://github.com/fungover/exercise2025/pull/91",
+    liveDemo: "",
+    slug: "java-exercise-algorithms-structures",
+    shortDescription:
+      "An exercise showcasing Java-based algorithm and data structure implementation.",
+    tags: ["Java", "Algorithms", "Backend", "Problem Solving"],
+    goal: "To practice implementing algorithmic logic and data structure handling in Java, focusing on clarity and maintainability.",
+    keyFeatures: [
+      "Algorithm implementation in Java",
+      "Data structure handling",
+      "Backend logic and problem solving",
+      "Clean and readable code",
+    ],
+    roleAndLearning:
+      "This exercise was completed independently to deepen my understanding of algorithm design and data handling in Java. It improved my problem-solving skills and backend programming confidence.",
   },
 ];

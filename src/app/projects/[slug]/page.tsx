@@ -38,13 +38,13 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </span>
           ))}
         </div>
-        <div className="bg-[#ebebeb] rounded-2xl shadow-md p-6">
+        <div className="bg-[#ebebeb] text-gray-800 rounded-2xl shadow-md p-6">
           <h3 className="text-[#2090C8] text-2xl font-semibold mb-2">
             Project Goal
           </h3>
           <p>{project.goal}</p>
         </div>
-        <div className="bg-[#ebebeb] rounded-2xl shadow-md p-6">
+        <div className="bg-[#ebebeb] text-gray-800 rounded-2xl shadow-md p-6">
           <h4 className="text-[#2090C8] text-2xl font-semibold mb-2">
             Key Features
           </h4>
@@ -59,7 +59,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             <h5 className="text-[#2090C8] text-2xl font-semibold mb-4">
               Snapshots
             </h5>
-            <div className="space-y-12">
+            <div className="space-y-12 text-gray-800">
               {project.snapshots.map(({ imageUrl, description }, idx) => (
                 <div
                   key={idx}
@@ -81,7 +81,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           </div>
         )}
 
-        <div className="bg-[#ebebeb] rounded-2xl shadow-md p-6">
+        <div className="bg-[#ebebeb] text-gray-800 rounded-2xl shadow-md p-6">
           <h6 className="text-2xl text-[#2090C8] font-semibold mb-2">
             Role & Learning
           </h6>
