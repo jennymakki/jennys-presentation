@@ -27,6 +27,13 @@ export const projects = [
       "Prevents duplicate items in grocery lists",
       "Responsive design for mobile and desktop",
     ],
+    uiArchitecture: [
+      "Built using a component-based architecture with reusable React components",
+      "Separated UI concerns into components such as form handling, ingredient lists, and list items",
+      "Implemented state-driven UI logic to manage dynamic interactions and user input",
+      "Designed reusable patterns for handling forms, lists, and user interactions consistently across the app",
+      "Focused on building reusable UI patterns rather than isolated features, aligning with design system principles",
+    ],
     snapshots: [
       {
         imageUrl: "/snapshots/Recipecard.png",

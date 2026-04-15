@@ -54,6 +54,18 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             ))}
           </ul>
         </div>
+        {project.uiArchitecture && (
+            <div className="bg-[#ebebeb] text-gray-800 rounded-2xl shadow-md p-6">
+              <h4 className="text-[#2090C8] text-2xl font-semibold mb-2">
+                UI Architecture & Component Thinking
+              </h4>
+              <ul className="list-disc list-inside space-y-1">
+                {project.uiArchitecture.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         {project.snapshots && project.snapshots.length > 0 && (
           <div className="p-6">
             <h5 className="text-[#2090C8] text-2xl font-semibold mb-4">
