@@ -40,7 +40,7 @@ export const projects = [
       },
     ],
     roleAndLearning:
-      "I built the project as a full-stack application using Next.js with server-side API routes and MongoDB for storage. I implemented Google authentication with NextAuth.js and focused on creating a seamless integration between recipes and grocery lists. This project strengthened my skills in full-stack development, user authentication, state management, and database design.",
+      "I built the project as a full-stack application using Next.js with server-side API routes and MongoDB for storage. I implemented Google authentication with NextAuth.js and focused on creating a seamless integration between recipes and grocery lists. This project strengthened my skills in building component-based UI, managing complex state, and designing consistent interaction patterns across the application.",
   },
 
   {
