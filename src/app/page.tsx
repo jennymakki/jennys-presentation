@@ -94,7 +94,7 @@ export default function Home() {
               onClick={() => (window.location.href = "/projects")}
               className="text-white text-xl font-bold bg-[#FF6F61] px-5 py-2 rounded hover:bg-[#FF8A75] hover:cursor-pointer"
             >
-              View UI System Project
+              View UI System Project (Soon)
             </button>
           </div>
         </div>
