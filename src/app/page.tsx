@@ -91,10 +91,10 @@ export default function Home() {
 
           <div className="mt-6">
             <button
-              onClick={() => (window.location.href = "/projects")}
+              onClick={() => (window.location.href = "/projects/ui-system")}
               className="text-white text-xl font-bold bg-[#FF6F61] px-5 py-2 rounded hover:bg-[#FF8A75] hover:cursor-pointer"
             >
-              View UI System Project (Soon)
+              View UI System Project
             </button>
           </div>
         </div>

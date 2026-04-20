@@ -1,5 +1,30 @@
 export const projects = [
   {
+    title: "UI System / Component Library",
+    description:
+      "A reusable UI system built with React and TypeScript, focusing on component architecture, variants, and state-driven design. The project demonstrates how to build scalable and consistent user interfaces using a design system approach.",
+    imageUrl: "/JennyUISystem.png",
+    link: "https://github.com/jennymakki/jenny-makki-ui",
+    liveDemo: "https://jenny-makki-ui.vercel.app/",
+    slug: "ui-system",
+    shortDescription:
+      "A reusable UI system with components, variants, and state-driven UI.",
+    tags: ["React", "TypeScript", "Design System", "UI", "Components"],
+    goal:
+      "The goal of this project was to explore how to build a scalable UI system using reusable components, consistent patterns, and state-driven interactions.",
+    keyFeatures: [
+      "Reusable Button, Input, Card, and Modal components",
+      "Component variants (size, style, states)",
+      "State-driven UI interactions",
+      "Component playground for testing UI behavior",
+      "Consistent styling with Tailwind CSS",
+    ],
+    snapshots: [
+    ],
+    roleAndLearning:
+      "I built this project independently to deepen my understanding of component architecture and design systems. It strengthened my ability to create reusable UI patterns, manage component state, and think in scalable frontend structures.",
+  },
+  {
     title: "Grocery Helper",
     description:
       "Grocery Helper is a full-stack web application that helps users manage recipes and grocery lists. Users can create grocery lists manually or add ingredients directly from recipes. The app features secure authentication, recipe management, and seamless integration between recipes and grocery lists.",
