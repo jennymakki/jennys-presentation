@@ -1,29 +1,52 @@
 export const projects = [
-  {
-    title: "UI System / Component Library",
-    description:
-      "A reusable UI system built with React and TypeScript, focusing on component architecture, variants, and state-driven design. The project demonstrates how to build scalable and consistent user interfaces using a design system approach.",
-    imageUrl: "/JennyUISystem.png",
-    link: "https://github.com/jennymakki/jenny-makki-ui",
-    liveDemo: "https://jenny-makki-ui.vercel.app/",
-    slug: "ui-system",
-    shortDescription:
-      "A reusable UI system with components, variants, and state-driven UI.",
-    tags: ["React", "TypeScript", "Design System", "UI", "Components"],
-    goal:
-      "The goal of this project was to explore how to build a scalable UI system using reusable components, consistent patterns, and state-driven interactions.",
-    keyFeatures: [
-      "Reusable Button, Input, Card, and Modal components",
-      "Component variants (size, style, states)",
-      "State-driven UI interactions",
-      "Component playground for testing UI behavior",
-      "Consistent styling with Tailwind CSS",
-    ],
-    snapshots: [
-    ],
-    roleAndLearning:
-      "I built this project independently to deepen my understanding of component architecture and design systems. It strengthened my ability to create reusable UI patterns, manage component state, and think in scalable frontend structures.",
-  },
+{
+  title: "UI System / Component Library",
+  description:
+    "A reusable UI system built with React and TypeScript, focusing on component architecture, variants, and state-driven design. It demonstrates how to build scalable and consistent user interfaces using a design system approach.",
+
+  imageUrl: "/JennyUISystem.png",
+
+  link: "https://github.com/jennymakki/jenny-makki-ui",
+  liveDemo: "https://jenny-makki-ui.vercel.app/",
+
+  slug: "ui-system",
+
+  shortDescription:
+    "A reusable UI system with components, variants, and state-driven UI.",
+
+  tags: ["React", "TypeScript", "Design System", "UI", "Components"],
+
+  goal:
+    "The goal of this project was to explore how to build a scalable UI system using reusable components, consistent patterns, and state-driven interactions.",
+
+  keyFeatures: [
+    "Reusable Button, Input, Card, and Modal components",
+    "Component variants for size, style, and states",
+    "State-driven UI interactions",
+    "Chat demo showing real-world component usage",
+    "Interactive playground for testing UI behavior",
+    "Consistent styling with Tailwind CSS",
+  ],
+  snapshots: [
+    {
+      imageUrl: "/JennyUISystem.png",
+      description: "Overview of the UI system homepage and component structure.",
+    },
+    {
+      imageUrl: "/snapshots/ButtonPlayground.png",
+      description: "Interactive playground where button variants and states are tested.",
+    },
+    {
+      imageUrl: "/snapshots/Chat.png",
+      description: "Chat demo showing real-world usage of components in an app context.",
+    },
+  ],
+
+  roleAndLearning:
+    "I built this project independently to deepen my understanding of component architecture and design systems. It strengthened my ability to create reusable UI patterns, manage component state, and design scalable frontend structures.",
+  featured: true,
+  accent: "red",
+},
   {
     title: "Grocery Helper",
     description:
