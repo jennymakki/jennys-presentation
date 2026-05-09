@@ -1,13 +1,15 @@
 "use client";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import Introduction from "@/components/introduction";
-import Contact from "@/components/contact";
+import Header from "@/components/blocks/header";
+import Footer from "@/components/blocks/footer";
+import Introduction from "@/components/blocks/introduction";
+import Contact from "@/components/blocks/contact";
 import { projects } from "../data/projects";
-import { ProjectCard } from "@/components/ProjectCard";
-import Skills from "@/components/Skills";
-import Jenny from "@/components/Jenny";
-import Hero from "@/components/Hero";
+import { ProjectCard } from "@/components/ui/ProjectCard";
+import Skills from "@/components/ui/Skills";
+import Jenny from "@/components/ui/Jenny";
+import Hero from "@/components/blocks/Hero";
+import ProjectSection from "@/components/blocks/ProjectSection";
+import Button from "@/components/ui/Button";
 
 export default function Home() {
   const limitedProjects = projects.slice(0, 6);
@@ -17,28 +19,17 @@ export default function Home() {
       <section className="p0">
         <Hero />
       </section>
-      <section className="px-6 py-16 max-w-4xl mx-auto">
+      <section className="px-6 py-16 max-w-6xl mx-auto">
         <Introduction />
       </section>
-      <section id="projects" className="row-start-3 p-6">
-        <h2 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-3">
-          My Projects
-        </h2>
-        <div className="row-start-3 grid grid-cols-1 md:grid-cols-2 gap-6 p-6 max-w-6xl mx-auto w-full">
-          {limitedProjects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
-          ))}
-        </div>
-        <div className="flex justify-center mt-3">
-          <button
-            className="text-white font-bold bg-[#FF6F61] px-5 py-1 text-2xl rounded hover:bg-[#FF8A75] hover:cursor-pointer m-5"
-            onClick={() => {
-              window.location.href = "/projects";
-            }}
-          >
-            See All Projects
-          </button>
-        </div>
+      <section
+        id="projects"
+        className="relative overflow-hidden bg-white"
+      >
+        <ProjectSection />
+      </section>
+      <section>
+
         <div className="flex flex-col text-gray-800 items-center mt-15 px-4">
           <h5 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-6">
             Skills and Technologies
@@ -139,9 +130,9 @@ export default function Home() {
           </div>
         </div>
         <section id="contact">
-        <div className="mt-20">
-          <Contact />
-        </div>
+          <div className="mt-20">
+            <Contact />
+          </div>
         </section>
       </section>
       <footer className="row-start-4 mt-6 bg-[#2090C8] w-full">

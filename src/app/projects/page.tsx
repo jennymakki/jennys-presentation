@@ -1,7 +1,7 @@
-import Header from "@/components/header"
-import Footer from "@/components/footer";
+import Header from "@/components/blocks/header"
+import Footer from "@/components/blocks/footer";
 import { projects } from "@/data/projects";
-import { ProjectCard } from "@/components/ProjectCard";
+import { ProjectCard } from "@/components/ui/ProjectCard";
 
 export default function Projects(){
     return (

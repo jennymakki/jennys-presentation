@@ -9,7 +9,7 @@ export default function Jenny() {
       alt="Jenny"
       className="w-[130px]"
       animate={{
-        y: [0, -10, 0],
+        y: [0, -5, 0],
       }}
       transition={{
         y: {

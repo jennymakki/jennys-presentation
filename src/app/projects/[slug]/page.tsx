@@ -2,9 +2,9 @@
 import * as React from "react";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import BackButton from "@/components/BackButton";
+import Header from "@/components/blocks/header";
+import Footer from "@/components/blocks/footer";
+import BackButton from "@/components/ui/BackButton";
 import { Github, Globe } from "lucide-react";
 import Image from "next/image";
 
