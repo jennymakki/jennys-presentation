@@ -6,18 +6,21 @@ import Contact from "@/components/contact";
 import { projects } from "../data/projects";
 import { ProjectCard } from "@/components/ProjectCard";
 import Skills from "@/components/Skills";
+import Jenny from "@/components/Jenny";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   const limitedProjects = projects.slice(0, 6);
   return (
-    <div className="grid grid-rows-[auto_auto_1fr_auto] bg-[#f5f5f5] items-center min-h-screen font-roboto">
-      <header className="row-start-1">
-        <Header />
-      </header>
-      <section className="flex flex-col gap-[32px] row-start-2 items-center">
+    <div className="bg-[#f5f5f5] min-h-screen font-roboto flex flex-col">
+      <Header />
+      <section className="p0">
+        <Hero />
+      </section>
+      <section className="px-6 py-16 max-w-4xl mx-auto">
         <Introduction />
       </section>
-      <section className="row-start-3 p-6">
+      <section id="projects" className="row-start-3 p-6">
         <h2 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-3">
           My Projects
         </h2>
@@ -135,9 +138,11 @@ export default function Home() {
             </p>
           </div>
         </div>
+        <section id="contact">
         <div className="mt-20">
-        <Contact />
+          <Contact />
         </div>
+        </section>
       </section>
       <footer className="row-start-4 mt-6 bg-[#2090C8] w-full">
         <Footer />
