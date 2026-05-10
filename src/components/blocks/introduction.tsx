@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { skills } from "@/data/skills";
-import { BookOpen, Sparkles, Trophy } from "lucide-react";
+import {  Sparkles } from "lucide-react";
 
 export default function Introduction() {
   const particles = Array.from({ length: 40 }, (_, i) => ({
