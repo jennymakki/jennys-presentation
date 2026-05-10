@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Button from "../ui/Button";
-import Jenny from "../Jenny/Jenny";
 import Image from "next/image";
 
 export default function Hero() {
