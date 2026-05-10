@@ -309,8 +309,8 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
                   className="flex flex-col items-center mt-16"
                 >
                   <p className="text-white/60 italic text-center max-w-md">
-                    The projects became more ambitious as the journey
-                    continued...
+                    Each project became a new step in learning, experimenting
+                    and building with more confidence.
                   </p>
 
                   <motion.div

@@ -4,7 +4,6 @@ import Footer from "@/components/blocks/footer";
 import Introduction from "@/components/blocks/introduction";
 import Contact from "@/components/blocks/contact";
 import { projects } from "../data/projects";
-import Skills from "@/components/ui/Skills";
 import Hero from "@/components/blocks/Hero";
 import ProjectSection from "@/components/blocks/ProjectSection";
 
@@ -28,68 +27,6 @@ export default function Home() {
       </section>
       
       <section>
-        <div className="flex flex-col text-gray-800 items-center mt-15 px-4">
-          <h5 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-6">
-            Skills and Technologies
-          </h5>
-          <Skills />
-        </div>
-        <div className="flex flex-col text-gray-800 items-center mt-20 px-4">
-          <h4 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-6">
-            Component System
-          </h4>
-
-          <div className="max-w-2xl text-center mb-6 bg-[#EBEBEB] rounded-2xl shadow-md p-6">
-            <p>
-              I focus on building reusable and scalable UI components. This
-              portfolio is structured using a component-based architecture, and
-              I have also created a dedicated UI system project to explore
-              component design, variants, and state management in depth.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
-            <div className="bg-[#EBEBEB] rounded-2xl shadow-md p-6">
-              <h5 className="font-bold text-lg mb-2 text-[#2090C8]">
-                Reusable Components
-              </h5>
-              <p className="text-m">
-                Components like cards, navigation, and layout elements are
-                reused across the portfolio to ensure consistency and
-                maintainability.
-              </p>
-            </div>
-
-            <div className="bg-[#EBEBEB] rounded-2xl shadow-md p-6">
-              <h5 className="font-bold text-lg mb-2 text-[#2090C8]">
-                State-driven UI
-              </h5>
-              <p className="text-m">
-                Interactive elements such as menus and forms are controlled
-                through state, enabling dynamic and predictable UI behavior.
-              </p>
-            </div>
-
-            <div className="bg-[#EBEBEB] rounded-2xl shadow-md p-6">
-              <h5 className="font-bold text-lg mb-2 text-[#2090C8]">
-                Design System Thinking
-              </h5>
-              <p className="text-m">
-                I approach frontend development by building reusable patterns
-                and scalable UI systems rather than isolated features.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-6">
-            <button
-              onClick={() => (window.location.href = "/projects/ui-system")}
-              className="text-white text-xl font-bold bg-[#FF6F61] px-5 py-2 rounded hover:bg-[#FF8A75] hover:cursor-pointer"
-            >
-              View UI System Project
-            </button>
-          </div>
-        </div>
         <div className="flex flex-col text-gray-800 items-center mt-10 px-4">
           <h6 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-6 mt-20">
             Testimonials
