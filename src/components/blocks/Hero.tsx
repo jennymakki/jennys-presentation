@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Button from "../ui/Button";
 import Jenny from "../Jenny/Jenny";
+import Image from "next/image";
 
 export default function Hero() {
   const [mood, setMood] = useState<"intro" | "projects" | "contact">("intro");
@@ -52,7 +53,7 @@ export default function Hero() {
 
       <div className="absolute left-[-120px] bottom-[-120px] w-[300px] h-[300px] rounded-full bg-white/10 blur-3xl" />
 
-      <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-center md:justify-start gap-10 px-6 md:px-16">
+      <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-center md:justify-start gap-10 px-6 mt-10 md:px-16">
         <div className="flex flex-col items-center md:items-start order-1 md:order-none">
           <div
             className="
@@ -73,12 +74,12 @@ export default function Hero() {
 
           <div
             className="
-              mt-2
+              mt-2 ml-10
               transition-all duration-500
               hover:-translate-y-2 hover:rotate-1
             "
           >
-            <Jenny />
+            <Image src="/newjenny.png" alt="Hero" width={150} height={50} />
           </div>
         </div>
 
@@ -86,14 +87,14 @@ export default function Hero() {
           className="
             text-center md:text-left
             space-y-5
-            max-w-2xl
+            max-w-xl
             order-2 md:order-none
             transition-all duration-500
             hover:-translate-y-1
           "
         >
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white">
-            I build component-driven <br /> web experiences
+            I build component-driven web experiences
           </h1>
 
           <p className="text-white/80 text-lg leading-relaxed">
