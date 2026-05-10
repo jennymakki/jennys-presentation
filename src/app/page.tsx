@@ -4,12 +4,9 @@ import Footer from "@/components/blocks/footer";
 import Introduction from "@/components/blocks/introduction";
 import Contact from "@/components/blocks/contact";
 import { projects } from "../data/projects";
-import { ProjectCard } from "@/components/ui/ProjectCard";
 import Skills from "@/components/ui/Skills";
-import Jenny from "@/components/Jenny/Jenny";
 import Hero from "@/components/blocks/Hero";
 import ProjectSection from "@/components/blocks/ProjectSection";
-import Button from "@/components/ui/Button";
 
 export default function Home() {
   const limitedProjects = projects.slice(0, 6);
