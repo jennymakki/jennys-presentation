@@ -17,7 +17,7 @@ export default function Body() {
         ease: "easeInOut",
       }}
     >
-      <img src="/jenny/body.svg" />
+      <img src="/Jenny/body.svg" />
 
       <Eyes />
     </motion.div>

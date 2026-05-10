@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function LeftArm() {
   return (
     <motion.img
-      src="/jenny/leftarm.svg"
+      src="/Jenny/leftarm.svg"
       alt=""
       className="absolute inset-0"
       animate={{

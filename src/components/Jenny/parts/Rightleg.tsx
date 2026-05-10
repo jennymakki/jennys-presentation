@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function RightLeg() {
   return (
     <motion.img
-      src="/jenny/rightleg.svg"
+      src="/Jenny/rightleg.svg"
       alt=""
       className="absolute inset-0"
       animate={{

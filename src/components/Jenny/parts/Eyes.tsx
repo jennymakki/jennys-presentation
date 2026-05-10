@@ -5,12 +5,12 @@ export default function Eyes() {
     
     <>
       <img
-        src="/jenny/lefteye.svg"
+        src="/Jenny/lefteye.svg"
         className="absolute inset-0"
       />
 
       <img
-        src="/jenny/righteye.svg"
+        src="/Jenny/righteye.svg"
         className="absolute inset-0"
       />
     </>
