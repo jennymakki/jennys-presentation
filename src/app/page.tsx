@@ -19,7 +19,7 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section className="px-6 py-16 max-w-6xl mx-auto">
+      <section className="p-0">
         <Introduction />
       </section>
 

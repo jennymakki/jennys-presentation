@@ -20,11 +20,11 @@ export const ProjectCard = ({ project }: { project: Project }) => (
 
     <div className="flex flex-col flex-grow px-4 pb-4">
       
-      <h3 className="text-2xl text-[#FFF] font-bold">
+      <h3 className="text-2xl text-white font-bold">
         {project.title}
       </h3>
 
-      <p className="mt-2 text-gray-700">
+      <p className="mt-2 text-white">
         {project.description}
       </p>
 

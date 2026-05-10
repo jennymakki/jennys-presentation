@@ -11,9 +11,7 @@ type ProjectSectionProps = {
   projects: Project[];
 };
 
-export default function ProjectSection({
-  projects,
-}: ProjectSectionProps) {
+export default function ProjectSection({ projects }: ProjectSectionProps) {
   const chapters = [
     {
       title: "Chapter 01 — System Thinking",
@@ -56,14 +54,21 @@ export default function ProjectSection({
       glow: "from-emerald-400 to-teal-500",
     },
     {
-      title: "Chapter 06 — Fundamentals",
-      subtitle: "Core frontend mastery & DOM logic",
-      vibe: "Back to where everything started.",
-      image: "/chapters/fundamentals.gif",
-      reward: "+ Frontend Core Complete",
-      glow: "from-yellow-400 to-orange-500",
+      title: "Chapter 06 — Client Build",
+      subtitle: "Books, content & conversion-driven design",
+      vibe: "From structure to real-world publishing flow.",
+      image: "/chapters/author-site.gif",
+      reward: "+ Client Project Delivered",
+      glow: "from-amber-400 to-rose-500",
     },
   ];
+
+  // HYDRATION SAFE STARS
+  const stars = Array.from({ length: 40 }, (_, i) => ({
+    id: i,
+    top: `${(i * 17) % 100}%`,
+    left: `${(i * 23) % 100}%`,
+  }));
 
   return (
     <section
@@ -74,22 +79,25 @@ export default function ProjectSection({
         bg-[radial-gradient(circle_at_top,#42b7f5,#2090C8,#176b94)]
       "
     >
+      {/* Background blobs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 blur-3xl rounded-full" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-300/10 blur-3xl rounded-full" />
 
+      {/* Stars */}
       <div className="absolute inset-0 opacity-20">
-        {[...Array(40)].map((_, i) => (
+        {stars.map((star) => (
           <div
-            key={i}
+            key={star.id}
             className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
             style={{
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
+              top: star.top,
+              left: star.left,
             }}
           />
         ))}
       </div>
 
+      {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -98,6 +106,7 @@ export default function ProjectSection({
       >
         <div className="flex items-center gap-3 mb-4">
           <Sparkles className="text-yellow-300" />
+
           <p className="uppercase tracking-[0.3em] text-sm text-white/70">
             Interactive Developer Journey
           </p>
@@ -108,11 +117,12 @@ export default function ProjectSection({
         </h2>
 
         <p className="text-white/80 mt-6 text-lg max-w-2xl leading-relaxed">
-          Not just projects — chapters of growth, experimentation,
-          creativity and becoming a better developer through building.
+          Not just projects — chapters of growth, experimentation, creativity
+          and becoming a better developer through building.
         </p>
       </motion.div>
 
+      {/* Timeline */}
       <div className="absolute left-1/2 top-0 h-full w-[2px] bg-white/10 hidden md:block" />
 
       <div className="relative z-10 space-y-40 max-w-6xl mx-auto">
@@ -131,10 +141,12 @@ export default function ProjectSection({
               }}
               className="relative"
             >
+              {/* Timeline dot */}
               <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 -top-10 w-7 h-7 rounded-full bg-white shadow-2xl items-center justify-center">
                 <div className="w-3 h-3 rounded-full bg-[#2090C8]" />
               </div>
 
+              {/* Chapter heading */}
               <div className="mb-12 text-center">
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -144,11 +156,10 @@ export default function ProjectSection({
                   {chapter.title}
                 </motion.p>
 
-                <p className="text-cyan-100 text-lg mt-3">
-                  {chapter.subtitle}
-                </p>
+                <p className="text-cyan-100 text-lg mt-3">{chapter.subtitle}</p>
               </div>
 
+              {/* Main card */}
               <motion.div
                 whileHover={{
                   y: -8,
@@ -156,7 +167,8 @@ export default function ProjectSection({
                 transition={{ duration: 0.4 }}
                 className="
                   relative overflow-hidden
-                  flex flex-col md:flex-row items-center justify-center gap-14
+                  flex flex-col md:flex-row
+                  items-center justify-center gap-14
                   px-8 py-16 rounded-[2rem]
                   bg-white/10
                   backdrop-blur-xl
@@ -164,6 +176,7 @@ export default function ProjectSection({
                   shadow-[0_20px_80px_rgba(0,0,0,0.2)]
                 "
               >
+                {/* Glow */}
                 <div
                   className={`
                     absolute inset-0 opacity-20 blur-3xl
@@ -171,7 +184,9 @@ export default function ProjectSection({
                   `}
                 />
 
+                {/* LEFT */}
                 <div className="relative flex flex-col items-center max-w-md z-10">
+                  {/* Bubble */}
                   <motion.div
                     animate={{
                       y: [0, -8, 0],
@@ -196,6 +211,7 @@ export default function ProjectSection({
                     <div className="absolute left-1/2 -bottom-3 -translate-x-1/2 w-6 h-6 bg-white rotate-45" />
                   </motion.div>
 
+                  {/* Image */}
                   <motion.div
                     whileHover={{
                       rotate: 2,
@@ -204,9 +220,11 @@ export default function ProjectSection({
                     transition={{ duration: 0.4 }}
                     className="relative"
                   >
+                    {/* Image glow */}
                     <div
                       className={`
-                        absolute inset-0 rounded-3xl blur-2xl opacity-40
+                        absolute inset-0 rounded-3xl
+                        blur-2xl opacity-40
                         bg-gradient-to-br ${chapter.glow}
                       `}
                     />
@@ -224,6 +242,7 @@ export default function ProjectSection({
                       "
                     />
 
+                    {/* Floating badge */}
                     <motion.div
                       animate={{
                         y: [0, -10, 0],
@@ -247,6 +266,7 @@ export default function ProjectSection({
                   </motion.div>
                 </div>
 
+                {/* RIGHT */}
                 <motion.div
                   whileHover={{
                     rotateX: 2,
@@ -258,6 +278,7 @@ export default function ProjectSection({
                   <ProjectCard project={project} />
                 </motion.div>
 
+                {/* Reward */}
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
@@ -279,6 +300,7 @@ export default function ProjectSection({
                 </motion.div>
               </motion.div>
 
+              {/* Bridge */}
               {index !== projects.length - 1 && (
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -310,6 +332,7 @@ export default function ProjectSection({
         })}
       </div>
 
+      {/* CTA */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

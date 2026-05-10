@@ -226,6 +226,51 @@ export const projects: Project[] = [
       "I was responsible for building the site structure and templating logic using EJS. I also wrote and styled the content pages, focusing on layout clarity and responsiveness. This project helped reinforce backend templating and server-side rendering concepts.",
   },
   {
+  title: "Anders Eklund – Portfolio Website",
+  description:
+    "A modern portfolio website built for a client using React and Next.js. The site focuses on clean presentation, responsive layouts, and clear content structure to showcase professional services and projects.",
+
+  imageUrl: "/anderseklund.png",
+
+  link: "https://github.com/jennymakki/anderseklund",
+  liveDemo: "https://anderseklund.vercel.app/",
+
+  slug: "anders-eklund-portfolio",
+
+  shortDescription:
+    "A responsive portfolio website built with Next.js and React.",
+
+  tags: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Responsive",
+    "Portfolio",
+  ],
+
+  goal:
+    "The goal of this project was to create a professional and responsive portfolio website with a strong visual structure and reusable UI patterns. The focus was on performance, clean design, and a smooth user experience across devices.",
+
+  keyFeatures: [
+    "Responsive design for desktop and mobile",
+    "Reusable UI components",
+    "Modern layout and typography",
+    "Optimized image handling",
+    "Clear project and content presentation",
+    "Fast and accessible user experience",
+  ],
+
+  snapshots: [
+  ],
+
+  roleAndLearning:
+    "I designed and developed the project independently, focusing on reusable component architecture, responsive layouts, and clean UI structure. This project strengthened my skills in modern frontend development, component composition, and building production-ready portfolio experiences.",
+
+  featured: true,
+  accent: "blue",
+},
+  {
     title: "To Do App – Frontend Version (v1)",
     description:
       "This is the first version of a To Do application, built as a frontend-focused project using HTML, CSS, and vanilla JavaScript. The goal was to create a clean and intuitive task manager while deepening my understanding of DOM manipulation, UI state, and event handling without relying on frameworks.",
