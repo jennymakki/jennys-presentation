@@ -1,6 +1,6 @@
 "use client";
 
-import Jenny from "@/components/ui/Jenny";
+import Jenny from "@/components/Jenny/Jenny";
 import { projects } from "@/data/projects";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import Button from "../ui/Button";
@@ -8,23 +8,38 @@ import Button from "../ui/Button";
 export default function ProjectSection() {
   const limitedProjects = projects.slice(0, 6);
 
-  const chapters = [
-    {
-      title: "Chapter 01 — Exploration",
-      subtitle: "Playing with UI & interaction",
-      vibe: "We start simple — focusing on interaction ✨",
-    },
-    {
-      title: "Chapter 02 — Architecture",
-      subtitle: "Reusable components & structure",
-      vibe: "Now we build structure & reusable systems 🧠",
-    },
-    {
-      title: "Chapter 03 — Growth",
-      subtitle: "Scaling UI systems",
-      vibe: "Here things get more advanced 🚀",
-    },
-  ];
+const chapters = [
+  {
+    title: "Chapter 01 — System Thinking",
+    subtitle: "Designing scalable UI architecture",
+    vibe: "We start with structure — building a full UI system",
+  },
+  {
+    title: "Chapter 02 — Fullstack Foundations",
+    subtitle: "Data, authentication & user flows",
+    vibe: "Now we connect frontend with backend systems",
+  },
+  {
+    title: "Chapter 03 — Real-world Applications",
+    subtitle: "APIs, booking systems & complex logic",
+    vibe: "We step into production-like applications",
+  },
+  {
+    title: "Chapter 04 — Interaction Design",
+    subtitle: "Game logic & dynamic UI feedback",
+    vibe: "Now things become playful and interactive",
+  },
+  {
+    title: "Chapter 05 — Content Systems",
+    subtitle: "Server-side rendering & structured content",
+    vibe: "We build structured learning experiences",
+  },
+  {
+    title: "Chapter 06 — Fundamentals",
+    subtitle: "Core frontend mastery & DOM logic",
+    vibe: "We end where it all begins — the fundamentals",
+  },
+];
 
   return (
     <section
@@ -34,18 +49,17 @@ export default function ProjectSection() {
 
       <div className="relative z-10 flex flex-col items-center text-center mb-24">
 
-        <h2 className="text-[#FFFFFF] font-bold text-4xl md:text-5xl">
+        <h2 className="text-[#FFFFFF] font-bold text-3xl md:text-4xl">
           My Projects
         </h2>
 
-        <p className="text-gray-200 mt-3 text-sm md:text-base max-w-xl">
+        <p className="text-gray-200 mt-3 text-sm md:text-lg max-w-xl">
           A narrative journey through my development — not just a list of work,
           but chapters of growth.
         </p>
 
       </div>
 
-      {/* 📖 CHAPTER FLOW */}
       <div className="relative z-10 space-y-24 max-w-6xl mx-auto">
 
         {limitedProjects.map((project, index) => {
@@ -54,20 +68,18 @@ export default function ProjectSection() {
           return (
             <div key={project.title}>
 
-              {/* 📌 CHAPTER HEADER */}
               <div className="mb-10 text-center md:text-left">
 
-                <p className="text-[#FF6F61] font-semibold tracking-widest text-sm uppercase">
+                <p className="text-[#FFFFFF] font-semibold tracking-widest text-lg uppercase">
                   {chapter.title}
                 </p>
 
-                <p className="text-gray-500 text-sm mt-1">
+                <p className="text-gray-200 text-base mt-1">
                   {chapter.subtitle}
                 </p>
 
               </div>
 
-              {/* 🎬 SCENE BLOCK */}
               <div
                 className={`
                   flex flex-col md:flex-row items-center justify-center gap-12
@@ -81,7 +93,6 @@ export default function ProjectSection() {
                 `}
               >
 
-                {/* 🤖 JENNY NARRATOR */}
                 <div className="flex flex-col items-center max-w-[220px]">
 
                   <div className="
@@ -107,9 +118,8 @@ export default function ProjectSection() {
 
                 </div>
 
-                {/* 🟣 PROJECT CARD */}
                 <div className="
-                  w-full md:w-[55%]
+                  w-full md:w-[45%]
                   transition-all duration-500
                   hover:-translate-y-2
                 ">
@@ -118,7 +128,6 @@ export default function ProjectSection() {
 
               </div>
 
-              {/* 🌑 CHAPTER SEPARATOR */}
               <div className="h-20 flex items-center justify-center">
                 <div className="w-2 h-2 rounded-full bg-[#2090C8]/30" />
               </div>
@@ -129,7 +138,6 @@ export default function ProjectSection() {
 
       </div>
 
-      {/* 🔘 CTA */}
       <div className="flex justify-center mt-24 relative z-10">
 
         <Button

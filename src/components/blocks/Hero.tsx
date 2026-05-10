@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Button from "../ui/Button";
-import Jenny from "../ui/Jenny";
+import Jenny from "../Jenny/Jenny";
 
 export default function Hero() {
   const [mood, setMood] = useState<"intro" | "projects" | "contact">("intro");
