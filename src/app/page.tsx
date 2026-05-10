@@ -10,23 +10,24 @@ import ProjectSection from "@/components/blocks/ProjectSection";
 
 export default function Home() {
   const limitedProjects = projects.slice(0, 6);
+
   return (
     <div className="bg-[#f5f5f5] min-h-screen font-roboto flex flex-col">
       <Header />
+
       <section className="p0">
         <Hero />
       </section>
+
       <section className="px-6 py-16 max-w-6xl mx-auto">
         <Introduction />
       </section>
-      <section
-        id="projects"
-        className="relative overflow-hidden bg-white"
-      >
-        <ProjectSection />
-      </section>
-      <section>
 
+      <section id="projects" className="relative overflow-hidden bg-white">
+        <ProjectSection projects={limitedProjects} />
+      </section>
+      
+      <section>
         <div className="flex flex-col text-gray-800 items-center mt-15 px-4">
           <h5 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-6">
             Skills and Technologies

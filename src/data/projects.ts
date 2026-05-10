@@ -1,5 +1,23 @@
-export const projects = [
-{
+export type Project = {
+  title: string;
+  description: string;
+  imageUrl: string;
+  link: string;
+  liveDemo?: string;
+  slug: string;
+  shortDescription: string;
+  tags: string[];
+  goal: string;
+  keyFeatures: string[];
+  snapshots: { imageUrl: string; description: string }[];
+  roleAndLearning: string;
+  featured?: boolean;
+  accent?: string;
+  uiArchitecture?: string[];
+};
+
+export const projects: Project[] = [
+  {
   title: "UI System / Component Library",
   description:
     "A reusable UI system built with React and TypeScript, focusing on component architecture, variants, and state-driven design. It demonstrates how to build scalable and consistent user interfaces using a design system approach.",
@@ -365,5 +383,5 @@ export const projects = [
     snapshots: [],
     roleAndLearning:
       "This exercise was completed independently to deepen my understanding of algorithm design and data handling in Java. It improved my problem-solving skills and backend programming confidence.",
-  },
+}
 ];
