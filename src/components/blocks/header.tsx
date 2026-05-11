@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,22 +39,40 @@ export default function Header() {
         `}
       >
         <div className="h-24 w-full max-w-6xl mx-auto px-6 flex items-center justify-between">
-
           <h1 className="font-bold text-2xl md:text-3xl text-white">
             Jenny Makki
           </h1>
 
           {/* DESKTOP NAV */}
           <nav className="hidden md:flex gap-10 text-white font-bold text-xl">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="hover:text-yellow-300 transition"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`
+        relative transition
+        hover:text-yellow-300
+        ${isActive ? "text-yellow-300" : "text-white"}
+      `}
+                >
+                  {link.label}
+
+                  {/* underline */}
+                  <span
+                    className={`
+          absolute left-0 -bottom-1 h-[2px] w-full
+          bg-yellow-300
+          transition-transform duration-300
+          origin-left
+          ${isActive ? "scale-x-100" : "scale-x-0"}
+        `}
+                  />
+                </Link>
+              );
+            })}
           </nav>
 
           {/* MOBILE BUTTON */}
