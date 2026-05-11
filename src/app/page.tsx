@@ -7,6 +7,7 @@ import { projects } from "../data/projects";
 import Hero from "@/components/blocks/Hero";
 import ProjectSection from "@/components/blocks/ProjectSection";
 import Testimonials from "@/components/blocks/Testimonials";
+import CurrentStatus from "@/components/blocks/CurrentStatus";
 
 export default function Home() {
   const limitedProjects = projects.slice(0, 6);
@@ -30,19 +31,12 @@ export default function Home() {
       <section id="testimonials" className="p-0">
       <Testimonials/>
       </section>
+
+      <section id="currentstatus" className="p-0">
+      <CurrentStatus/>
+      </section>
+
       <section>
-        <div className="items-center mt-10">
-          <h4 className="text-[#2090C8] font-roboto font-bold text-3xl md:text-4xl text-center mb-2 mt-20">
-            Currently working on
-          </h4>
-          <div className="max-w-xl text-gray-800 bg-[#EBEBEB] rounded-2xl shadow-md p-6 mx-auto">
-            <p className="text-center text-md">
-              Currently completing my studies and actively seeking opportunities
-              in frontend development, with a strong interest in building
-              scalable UI systems and design system–driven applications.
-            </p>
-          </div>
-        </div>
         <section id="contact">
           <div className="mt-20">
             <Contact />
