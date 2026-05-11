@@ -1,41 +1,57 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Project } from "@/data/projects";
+import Button from "@/components/ui/Button";
 
-export const ProjectCard = ({ project }: { project: Project }) => (
-  <div className="rounded-xl shadow-md flex flex-col h-full">
-    
-    <div className="relative h-48 w-full rounded-lg mb-3 overflow-hidden">
-      <Image
-        src={project.imageUrl}
-        alt={project.title}
-        fill
-        style={{
-          objectFit: "cover",
-          objectPosition: "top",
-        }}
-        sizes="(max-width: 768px) 100vw, 600px"
-      />
-    </div>
+export const ProjectCard = ({ project }: { project: Project }) => {
+  return (
+    <div
+      className="
+        group relative
+        rounded-2xl
+        bg-white/10
+        backdrop-blur-xl
+        border border-white/20
+        shadow-[0_20px_60px_rgba(0,0,0,0.2)]
+        overflow-hidden
+        transition-all duration-300
+        hover:-translate-y-2
+        hover:shadow-[0_30px_80px_rgba(0,0,0,0.3)]
+      "
+    >
+      {/* IMAGE */}
+      <div className="relative h-48 w-full overflow-hidden">
+        <Image
+          src={project.imageUrl}
+          alt={project.title}
+          fill
+          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, 600px"
+        />
 
-    <div className="flex flex-col flex-grow px-4 pb-4">
-      
-      <h3 className="text-2xl text-white font-bold">
-        {project.title}
-      </h3>
-
-      <p className="mt-2 text-white">
-        {project.description}
-      </p>
-
-      <div className="mt-auto flex justify-end">
-        <Link href={`/projects/${project.slug}`}>
-          <button className="text-white font-bold bg-[#FF6F61] px-5 py-1 rounded mt-4 hover:bg-[#FF8A75] hover:cursor-pointer">
-            Read More
-          </button>
-        </Link>
+        {/* subtle overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
       </div>
 
+      {/* CONTENT */}
+      <div className="flex flex-col flex-grow p-5">
+        <h3 className="text-2xl font-bold text-white">
+          {project.title}
+        </h3>
+
+        <p className="mt-2 text-white/80 leading-relaxed">
+          {project.description}
+        </p>
+
+        {/* CTA */}
+        <div className="mt-6 flex justify-end">
+          <Link href={`/projects/${project.slug}`}>
+            <Button variant="primary">
+              Read More →
+            </Button>
+          </Link>
+        </div>
+      </div>
     </div>
-  </div>
-);
+  );
+};

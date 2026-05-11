@@ -1,5 +1,5 @@
-import Header from "@/components/blocks/header"
-import Footer from "@/components/blocks/footer";
+import Header from "@/components/blocks/Header"
+import Footer from "@/components/blocks/Footer";
 import { projects } from "@/data/projects";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 

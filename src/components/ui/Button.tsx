@@ -15,21 +15,39 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "font-bold px-5 py-2 rounded transition-all duration-200 hover:cursor-pointer active:scale-[0.98] hover:scale-[1.02]";
+    "font-semibold px-5 py-2 rounded-xl transition-all duration-200 hover:cursor-pointer active:scale-[0.97] hover:scale-[1.03]";
 
   const variants: Record<ButtonVariant, string> = {
-    primary:
-      "text-white bg-[#FF6F61] hover:bg-[#FF8A75]",
+primary: `
+  relative
+  bg-[#2090C8]
+  text-white
+  font-semibold
 
-    secondary:
-      "text-[#ffffff] border-2 border-[#FF6F61] hover:bg-[#FF6F61] hover:text-white",
+  shadow-md
+  border border-[#2090C8]
+
+  hover:shadow-[0_0_30px_rgba(250,204,21,0.25)]
+  hover:border-yellow-300/40
+
+  transition-all duration-200
+  active:scale-[0.97]
+`,
+
+    secondary: `
+      bg-white/80
+      backdrop-blur-md
+      text-[#2090C8]
+      border border-[#2090C8]/30
+      shadow-sm
+      hover:bg-[#2090C8]
+      hover:text-white
+      hover:border-[#2090C8]
+    `,
   };
 
   return (
-    <button
-      className={`${base} ${variants[variant]} ${className}`}
-      {...props}
-    >
+    <button className={`${base} ${variants[variant]} ${className}`} {...props}>
       {children}
     </button>
   );

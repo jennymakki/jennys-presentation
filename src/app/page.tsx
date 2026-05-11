@@ -1,8 +1,8 @@
 "use client";
-import Header from "@/components/blocks/header";
-import Footer from "@/components/blocks/footer";
+import Header from "@/components/blocks/Header";
+import Footer from "@/components/blocks/Footer";
 import Introduction from "@/components/blocks/introduction";
-import Contact from "@/components/blocks/contact";
+import Contact from "@/components/blocks/Contact";
 import { projects } from "../data/projects";
 import Hero from "@/components/blocks/Hero";
 import ProjectSection from "@/components/blocks/ProjectSection";
@@ -36,13 +36,9 @@ export default function Home() {
       <CurrentStatus/>
       </section>
 
-      <section>
-        <section id="contact">
-          <div className="mt-20">
+        <section id="contact" className="p-0">
             <Contact />
-          </div>
         </section>
-      </section>
       <footer className="row-start-4 mt-6 bg-[#2090C8] w-full">
         <Footer />
       </footer>

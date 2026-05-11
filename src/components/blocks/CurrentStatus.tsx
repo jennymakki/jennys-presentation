@@ -24,7 +24,7 @@ export default function CurrentStatus() {
         className="relative z-10 text-center mb-20"
       >
         <div className="flex items-center justify-center gap-3 mb-4">
-          <Sparkles className="text-yellow-300" />
+          <Sparkles className="text-yellow-300" size={18} />
 
           <p className="uppercase tracking-[0.3em] text-sm text-white/70">
             Now

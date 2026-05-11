@@ -28,7 +28,7 @@ export default function Testimonials() {
         bg-[linear-gradient(to_bottom,#ffffff,#f7fbff)]
       "
     >
-      {/* BACKGROUND GLOWS (soft + clean) */}
+      {/* BACKGROUND GLOWS */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-[#2090C8]/10 blur-3xl rounded-full" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-200/20 blur-3xl rounded-full" />
 
@@ -77,7 +77,7 @@ export default function Testimonials() {
               {/* soft glow */}
               <div className="absolute inset-0 bg-[#2090C8]/10 blur-2xl rounded-full scale-110" />
 
-              <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-3xl overflow-hidden shadow-xl border border-white">
+              <div className="relative w-45 h-45 md:w-50 md:h-60 rounded-3xl overflow-hidden shadow-xl border border-white">
                 <Image
                   src={t.image}
                   alt={t.author}
