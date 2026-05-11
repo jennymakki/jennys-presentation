@@ -1,75 +1,77 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ProjectCard } from "@/components/ui/ProjectCard";
+import { Sparkles } from "lucide-react";
+
 import Button from "../ui/Button";
 import type { Project } from "@/data/projects";
-import Image from "next/image";
-import { Sparkles, Star, Trophy } from "lucide-react";
+
+import ProjectTimelineItem from "./project-section/ProjectTimelineItem";
 
 type ProjectSectionProps = {
   projects: Project[];
 };
 
-export default function ProjectSection({ projects }: ProjectSectionProps) {
-  const chapters = [
-    {
-      title: "Chapter 01 — System Thinking",
-      subtitle: "Designing scalable UI architecture",
-      vibe: "Building systems before building screens.",
-      image: "/chapters/system-thinking.png",
-      reward: "+ UI Architecture Unlocked",
-      glow: "from-cyan-400 to-blue-500",
-    },
-    {
-      title: "Chapter 02 — Fullstack Foundations",
-      subtitle: "Data, authentication & user flows",
-      vibe: "Frontend finally meets real backend logic.",
-      image: "/chapters/fullstack-foundations.png",
-      reward: "+ Auth & APIs Mastered",
-      glow: "from-purple-400 to-indigo-500",
-    },
-    {
-      title: "Chapter 03 — Real-world Applications",
-      subtitle: "APIs, booking systems & complex logic",
-      vibe: "Things become more production-like.",
-      image: "/chapters/real-world-applications.png",
-      reward: "+ Complex Systems Built",
-      glow: "from-orange-400 to-pink-500",
-    },
-    {
-      title: "Chapter 04 — Interaction Design",
-      subtitle: "Game logic & dynamic UI feedback",
-      vibe: "Interfaces become playful and alive.",
-      image: "/chapters/interaction-design.png",
-      reward: "+ Interaction Design Unlocked",
-      glow: "from-pink-400 to-rose-500",
-    },
-    {
-      title: "Chapter 05 — Content Systems",
-      subtitle: "Server-side rendering & structured content",
-      vibe: "Learning how content scales beautifully.",
-      image: "/chapters/content-systems.png",
-      reward: "+ SSR & CMS Experience",
-      glow: "from-emerald-400 to-teal-500",
-    },
-    {
-      title: "Chapter 06 — Client Build",
-      subtitle: "Books, content & conversion-driven design",
-      vibe: "From structure to real-world publishing flow.",
-      image: "/chapters/author-site.gif",
-      reward: "+ Client Project Delivered",
-      glow: "from-amber-400 to-rose-500",
-    },
-  ];
+const chapters = [
+  {
+    title: "Chapter 01 — System Thinking",
+    subtitle: "Designing scalable UI architecture",
+    vibe: "Building systems before building screens.",
+    image: "/chapters/system-thinking.png",
+    reward: "+ UI Architecture Unlocked",
+    glow: "linear-gradient(to bottom right, #22d3ee, #3b82f6)",
+  },
+  {
+    title: "Chapter 02 — Fullstack Foundations",
+    subtitle: "Data, authentication & user flows",
+    vibe: "Frontend finally meets real backend logic.",
+    image: "/chapters/fullstack-foundations.png",
+    reward: "+ Auth & APIs Mastered",
+    glow: "linear-gradient(to bottom right, #a855f7, #6366f1)",
+  },
+  {
+    title: "Chapter 03 — Real-world Applications",
+    subtitle: "APIs, booking systems & complex logic",
+    vibe: "Things become more production-like.",
+    image: "/chapters/real-world-applications.png",
+    reward: "+ Complex Systems Built",
+    glow: "linear-gradient(to bottom right, #fb923c, #ec4899)",
+  },
+  {
+    title: "Chapter 04 — Interaction Design",
+    subtitle: "Game logic & dynamic UI feedback",
+    vibe: "Interfaces become playful and alive.",
+    image: "/chapters/interaction-design.png",
+    reward: "+ Interaction Design Unlocked",
+    glow: "linear-gradient(to bottom right, #f472b6, #fb7185)",
+  },
+  {
+    title: "Chapter 05 — Content Systems",
+    subtitle: "Server-side rendering & structured content",
+    vibe: "Learning how content scales beautifully.",
+    image: "/chapters/content-systems.png",
+    reward: "+ SSR & CMS Experience",
+    glow: "linear-gradient(to bottom right, #34d399, #14b8a6)",
+  },
+  {
+    title: "Chapter 06 — Client Build",
+    subtitle: "Books, content & conversion-driven design",
+    vibe: "From structure to real-world publishing flow.",
+    image: "/chapters/author-site.png",
+    reward: "+ Client Project Delivered",
+    glow: "linear-gradient(to bottom right, #fbbf24, #fb7185)",
+  },
+];
 
-  // HYDRATION SAFE STARS
-  const stars = Array.from({ length: 40 }, (_, i) => ({
-    id: i,
-    top: `${(i * 17) % 100}%`,
-    left: `${(i * 23) % 100}%`,
-  }));
+const stars = Array.from({ length: 40 }, (_, i) => ({
+  id: i,
+  top: `${(i * 17) % 100}%`,
+  left: `${(i * 23) % 100}%`,
+}));
 
+export default function ProjectSection({
+  projects,
+}: ProjectSectionProps) {
   return (
     <section
       id="projects"
@@ -117,8 +119,8 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
         </h2>
 
         <p className="text-white/80 mt-6 text-lg max-w-2xl leading-relaxed">
-          Not just projects — chapters of growth, experimentation, creativity
-          and becoming a better developer through building.
+          Not just projects — chapters of growth, experimentation,
+          creativity and becoming a better developer through building.
         </p>
       </motion.div>
 
@@ -130,204 +132,13 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
           const chapter = chapters[index % chapters.length];
 
           return (
-            <motion.div
+            <ProjectTimelineItem
               key={project.slug}
-              initial={{ opacity: 0, y: 120 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.9,
-                delay: index * 0.08,
-              }}
-              className="relative"
-            >
-              {/* Timeline dot */}
-              <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 -top-10 w-7 h-7 rounded-full bg-white shadow-2xl items-center justify-center">
-                <div className="w-3 h-3 rounded-full bg-[#2090C8]" />
-              </div>
-
-              {/* Chapter heading */}
-              <div className="mb-12 text-center">
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  className="text-white font-bold tracking-[0.25em] text-sm uppercase"
-                >
-                  {chapter.title}
-                </motion.p>
-
-                <p className="text-cyan-100 text-lg mt-3">{chapter.subtitle}</p>
-              </div>
-
-              {/* Main card */}
-              <motion.div
-                whileHover={{
-                  y: -8,
-                }}
-                transition={{ duration: 0.4 }}
-                className="
-                  relative overflow-hidden
-                  flex flex-col md:flex-row
-                  items-center justify-center gap-14
-                  px-8 py-16 rounded-[2rem]
-                  bg-white/10
-                  backdrop-blur-xl
-                  border border-white/20
-                  shadow-[0_20px_80px_rgba(0,0,0,0.2)]
-                "
-              >
-                {/* Glow */}
-                <div
-                  className={`
-                    absolute inset-0 opacity-20 blur-3xl
-                    bg-gradient-to-br ${chapter.glow}
-                  `}
-                />
-
-                {/* LEFT */}
-                <div className="relative flex flex-col items-center max-w-md z-10">
-                  {/* Bubble */}
-                  <motion.div
-                    animate={{
-                      y: [0, -8, 0],
-                    }}
-                    transition={{
-                      duration: 4,
-                      repeat: Infinity,
-                    }}
-                    className="
-                      relative bg-white
-                      px-6 py-5 rounded-3xl
-                      shadow-2xl text-gray-700
-                      text-center mb-6
-                      max-w-sm
-                      rotate-[-2deg]
-                    "
-                  >
-                    <p className="leading-relaxed font-medium">
-                      {chapter.vibe}
-                    </p>
-
-                    <div className="absolute left-1/2 -bottom-3 -translate-x-1/2 w-6 h-6 bg-white rotate-45" />
-                  </motion.div>
-
-                  {/* Image */}
-                  <motion.div
-                    whileHover={{
-                      rotate: 2,
-                      scale: 1.03,
-                    }}
-                    transition={{ duration: 0.4 }}
-                    className="relative"
-                  >
-                    {/* Image glow */}
-                    <div
-                      className={`
-                        absolute inset-0 rounded-3xl
-                        blur-2xl opacity-40
-                        bg-gradient-to-br ${chapter.glow}
-                      `}
-                    />
-
-                    <Image
-                      src={chapter.image}
-                      alt={chapter.title}
-                      width={800}
-                      height={900}
-                      className="
-                        relative rounded-3xl
-                        object-cover
-                        w-full h-auto
-                        shadow-2xl
-                      "
-                    />
-
-                    {/* Floating badge */}
-                    <motion.div
-                      animate={{
-                        y: [0, -10, 0],
-                      }}
-                      transition={{
-                        duration: 3,
-                        repeat: Infinity,
-                      }}
-                      className="
-                        absolute -top-4 -right-4
-                        bg-white text-[#2090C8]
-                        px-4 py-2 rounded-full
-                        shadow-xl font-semibold
-                        text-sm
-                        flex items-center gap-2
-                      "
-                    >
-                      <Star size={16} />
-                      New Skill
-                    </motion.div>
-                  </motion.div>
-                </div>
-
-                {/* RIGHT */}
-                <motion.div
-                  whileHover={{
-                    rotateX: 2,
-                    rotateY: -2,
-                  }}
-                  transition={{ duration: 0.4 }}
-                  className="w-full md:w-[45%] relative z-10"
-                >
-                  <ProjectCard project={project} />
-                </motion.div>
-
-                {/* Reward */}
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ delay: 0.4 }}
-                  className="
-                    absolute bottom-4 left-1/2
-                    -translate-x-1/2
-                    bg-white/20
-                    backdrop-blur-lg
-                    border border-white/20
-                    text-white
-                    px-5 py-3 rounded-full
-                    text-sm font-medium
-                    flex items-center gap-2
-                  "
-                >
-                  <Trophy size={16} />
-                  {chapter.reward}
-                </motion.div>
-              </motion.div>
-
-              {/* Bridge */}
-              {index !== projects.length - 1 && (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ delay: 0.3 }}
-                  className="flex flex-col items-center mt-16"
-                >
-                  <p className="text-white/60 italic text-center max-w-md">
-                    Each project became a new step in learning, experimenting
-                    and building with more confidence.
-                  </p>
-
-                  <motion.div
-                    animate={{
-                      y: [0, 10, 0],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                    }}
-                    className="mt-6"
-                  >
-                    <div className="w-[2px] h-20 bg-white/20" />
-                  </motion.div>
-                </motion.div>
-              )}
-            </motion.div>
+              project={project}
+              chapter={chapter}
+              index={index}
+              isLast={index === projects.length - 1}
+            />
           );
         })}
       </div>
