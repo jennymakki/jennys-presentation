@@ -1,7 +1,7 @@
 "use client";
 import Header from "@/components/blocks/header";
 import Footer from "@/components/blocks/footer";
-import Introduction from "@/components/blocks/Introduction";
+import Introduction from "@/components/blocks/introduction";
 import Contact from "@/components/blocks/contact";
 import { projects } from "../data/projects";
 import Hero from "@/components/blocks/Hero";
