@@ -10,12 +10,6 @@ import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 
-const stars = Array.from({ length: 50 }, (_, i) => ({
-  id: i,
-  top: `${(i * 19) % 100}%`,
-  left: `${(i * 29) % 100}%`,
-}));
-
 export default function Projects() {
   return (
     <div className="min-h-screen flex flex-col bg-[#2090C8] overflow-hidden">
