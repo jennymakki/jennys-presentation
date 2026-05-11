@@ -13,12 +13,18 @@ export default function Header() {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navLinks = [
+    { href: "/", label: "HOME" },
+    { href: "/projects", label: "PROJECTS" },
+    { href: "/about", label: "ABOUT ME" },
+  ];
+
   return (
     <>
+      {/* HEADER */}
       <header
         className={`
           sticky top-0 z-50
@@ -30,54 +36,43 @@ export default function Header() {
           }
         `}
       >
-        <div className="h-24 w-full max-w-5xl mx-auto px-6 flex items-center justify-between">
+        <div className="h-24 w-full max-w-6xl mx-auto px-6 flex items-center justify-between">
 
-          <h1 className="font-roboto text-3xl text-white font-bold">
+          <h1 className="font-bold text-2xl md:text-3xl text-white">
             Jenny Makki
           </h1>
 
-          <nav className="hidden md:flex space-x-8 text-white font-bold text-2xl">
-            <Link
-              href="/"
-              className="hover:text-[#FF6F61] transition"
-            >
-              HOME
-            </Link>
-
-            <Link
-              href="/projects"
-              className="hover:text-[#FF6F61] transition"
-            >
-              PROJECTS
-            </Link>
-
-            <Link
-              href="/about"
-              className="hover:text-[#FF6F61] transition"
-            >
-              ABOUT ME
-            </Link>
+          {/* DESKTOP NAV */}
+          <nav className="hidden md:flex gap-10 text-white font-bold text-xl">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="hover:text-[#FF6F61] transition"
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
 
+          {/* MOBILE BUTTON */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden relative z-[999] flex flex-col justify-center items-center w-12 h-12 gap-1 rounded-xl"
+            className="md:hidden relative z-[90] flex flex-col justify-center items-center w-12 h-12 gap-1 rounded-xl"
             aria-label="Toggle menu"
           >
             <span
-              className={`block w-8 h-1 bg-white rounded-full transition-transform duration-300 ${
+              className={`w-8 h-1 bg-white rounded-full transition-transform duration-300 ${
                 isOpen ? "rotate-45 translate-y-2" : ""
               }`}
             />
-
             <span
-              className={`block w-8 h-1 bg-white rounded-full transition-opacity duration-300 ${
+              className={`w-8 h-1 bg-white rounded-full transition-opacity duration-300 ${
                 isOpen ? "opacity-0" : "opacity-100"
               }`}
             />
-
             <span
-              className={`block w-8 h-1 bg-white rounded-full transition-transform duration-300 ${
+              className={`w-8 h-1 bg-white rounded-full transition-transform duration-300 ${
                 isOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             />
@@ -85,10 +80,11 @@ export default function Header() {
         </div>
       </header>
 
+      {/* OVERLAY */}
       <div
         className={`
-          md:hidden fixed inset-0 z-40
-          bg-black/30 backdrop-blur-md
+          md:hidden fixed inset-0 z-[60]
+          bg-black/40 backdrop-blur-md
           transition-opacity duration-500
           ${
             isOpen
@@ -99,52 +95,38 @@ export default function Header() {
         onClick={() => setIsOpen(false)}
       />
 
+      {/* MOBILE MENU */}
       <nav
         className={`
-          md:hidden fixed top-0 right-0 z-50
-          w-60 h-full
-          bg-[#2090C8]/95 backdrop-blur-xl
-          rounded-l-2xl shadow-2xl
+          md:hidden fixed top-0 right-0 z-[70]
+          w-72 h-full
+          bg-[#2090C8]/90 backdrop-blur-xl
+          shadow-2xl
+          rounded-l-2xl
           transition-transform duration-500
-          ${
-            isOpen
-              ? "translate-x-0"
-              : "translate-x-full"
-          }
+          ${isOpen ? "translate-x-0" : "translate-x-full"}
         `}
       >
-        <ul className="mt-32 p-6 text-2xl space-y-10 text-white font-bold">
+        {/* CLOSE BUTTON */}
+        <button
+          onClick={() => setIsOpen(false)}
+          className="absolute top-5 right-5 text-white text-2xl z-[80] hover:text-[#FF6F61] transition"
+        >
+          ✕
+        </button>
 
-          <li>
-            <Link
-              href="/"
-              className="hover:text-blue-300 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              HOME
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              href="/projects"
-              className="hover:text-blue-300 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              PROJECTS
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              href="/about"
-              className="hover:text-blue-300 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              ABOUT ME
-            </Link>
-          </li>
-
+        <ul className="mt-28 px-8 space-y-10 text-white font-bold text-2xl">
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className="hover:text-[#FF6F61] transition"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </>

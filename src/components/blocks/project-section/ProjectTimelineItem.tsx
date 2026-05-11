@@ -182,7 +182,7 @@ export default function ProjectTimelineItem({
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
           className="
-            absolute bottom-4 left-1/2
+            absolute bottom-1 left-1/2
             -translate-x-1/2
             bg-white/20
             backdrop-blur-lg
