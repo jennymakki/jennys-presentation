@@ -69,9 +69,9 @@ export default function Projects() {
       "
             >
               <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white">
-                Building interactive
+                Welcome to browse through my
                 <span className="block text-cyan-200">
-                  experiences
+                  projects
                 </span>
               </h1>
 
