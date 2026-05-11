@@ -45,10 +45,10 @@ export default function Projects() {
                 <div className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-4 h-4 bg-white rotate-45" />
               </div>
 
-              {/* avatar EXACT same feel */}
+              {/* avatar */}
               <div
                 className="
-          mt-2 ml-10
+          mt-2 ml-30
           transition-all duration-500
           hover:-translate-y-2 hover:rotate-1
         "
@@ -57,7 +57,7 @@ export default function Projects() {
               </div>
             </div>
 
-            {/* RIGHT SIDE (TEXT BLOCK EXACT SAME STRUCTURE) */}
+            {/* RIGHT SIDE */}
             <div
               className="
         text-center md:text-left
