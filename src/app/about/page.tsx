@@ -1,6 +1,6 @@
-import Header from "@/components/blocks/Header";
-import Footer from "@/components/blocks/Footer";
-import Contact from "@/components/blocks/Contact";
+import Header from "@/components/blocks/header";
+import Footer from "@/components/blocks/footer";
+import Contact from "@/components/blocks/contact";
 import Image from "next/image";
 
 export default function About() {

@@ -1,8 +1,8 @@
 "use client";
-import Header from "@/components/blocks/Header";
-import Footer from "@/components/blocks/Footer";
-import Introduction from "@/components/blocks/introduction";
-import Contact from "@/components/blocks/Contact";
+import Header from "@/components/blocks/header";
+import Footer from "@/components/blocks/footer";
+import Introduction from "@/components/blocks/Introduction";
+import Contact from "@/components/blocks/contact";
 import { projects } from "../data/projects";
 import Hero from "@/components/blocks/Hero";
 import ProjectSection from "@/components/blocks/ProjectSection";
