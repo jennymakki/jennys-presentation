@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 export default function ProjectsHero() {
   return (
     <section className="relative overflow-hidden py-20 px-6 bg-gradient-to-b from-[#2090C8] via-[#176b94] to-[#07111f]">
-      <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-[250px_1fr] gap-16 items-center">
-
+      <div className="relative z-10 max-w-5xl mx-auto">
+        <div className="grid lg:grid-cols-[250px_1fr] gap-16 items-center text-center lg:text-left">
           {/* Avatar */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -46,6 +45,7 @@ export default function ProjectsHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="flex flex-col items-center lg:items-start"
           >
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white">
               Building Through Curiosity
@@ -53,7 +53,8 @@ export default function ProjectsHero() {
 
             <p className="text-white/80 text-lg leading-relaxed mt-4">
               A story-driven collection of projects exploring UI systems,
-              interaction design, fullstack architecture and real-world development.
+              interaction design, fullstack architecture and real-world
+              development.
             </p>
           </motion.div>
         </div>
