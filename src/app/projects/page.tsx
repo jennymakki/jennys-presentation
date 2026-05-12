@@ -3,7 +3,6 @@
 import Header from "@/components/blocks/header";
 import Footer from "@/components/blocks/footer";
 
-import { Sparkles } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
