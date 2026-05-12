@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+import { Sparkles } from "lucide-react";
+
 export default function ProjectsHero() {
   return (
     <section className="relative overflow-hidden py-20 px-6 bg-gradient-to-b from-[#2090C8] via-[#176b94] to-[#07111f]">
@@ -47,8 +49,16 @@ export default function ProjectsHero() {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-center lg:items-start"
           >
+
+            <div className="flex items-center justify-center gap-3 mb-4">
+          <Sparkles className="text-yellow-300" size={18} />
+
+          <p className="uppercase tracking-[0.3em] text-sm text-white/70">
+            PROJECTS
+          </p>
+        </div>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white">
-              Building Through Curiosity
+              Designing, Developing, Experimenting
             </h1>
 
             <p className="text-white/80 text-lg leading-relaxed mt-4">

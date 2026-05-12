@@ -32,7 +32,7 @@ export default function StoryArcSection({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="grid lg:grid-cols-[240px_1fr] gap-12 items-center mb-24"
+          className="grid lg:grid-cols-[350px_1fr] gap-12 items-center mb-24"
         >
           {/* Avatar + bubble */}
           <div className="relative flex justify-center">
@@ -49,9 +49,9 @@ export default function StoryArcSection({
               </div>
             </motion.div>
 
-            <div className={`absolute inset-0 blur-3xl opacity-40 rounded-full bg-gradient-to-br ${accent}`} />
+            <div className={`absolute inset-0 blur-3xl opacity-40 mt-5 rounded-full bg-gradient-to-br ${accent}`} />
 
-            <Image src={avatar} alt={title} width={220} height={220} className="relative z-10" />
+            <Image src={avatar} alt={title} width={400} height={400} className="relative z-10" />
           </div>
 
           {/* Text */}

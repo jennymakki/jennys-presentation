@@ -33,7 +33,7 @@ export default function ProjectsPage() {
       <StoryArcSection
         title="Frontend Foundations"
         description="Learning how interfaces, layouts and interactions work."
-        avatar="/avatars/jenny-curious.png"
+        avatar="/jenny-curious.png"
         quote="This was where everything started clicking for me."
         accent="from-cyan-400 to-blue-500"
         projects={getProjects(frontendArc)}
@@ -42,7 +42,7 @@ export default function ProjectsPage() {
       <StoryArcSection
         title="Interactive Systems"
         description="State-driven UI and interaction-focused development."
-        avatar="/avatars/jenny-system.png"
+        avatar="/jenny-system.png"
         quote="I stopped thinking in pages and started thinking in systems."
         accent="from-pink-500 to-orange-400"
         projects={getProjects(interactionArc)}
@@ -51,7 +51,7 @@ export default function ProjectsPage() {
       <StoryArcSection
         title="Fullstack Growth"
         description="Frontend meets backend architecture."
-        avatar="/avatars/jenny-fullstack.png"
+        avatar="/jenny-fullstack.png"
         quote="This was when projects started feeling real."
         accent="from-violet-500 to-indigo-500"
         projects={getProjects(fullstackArc)}
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
       <StoryArcSection
         title="Professional Work"
         description="Production-focused client work."
-        avatar="/avatars/jenny-professional.png"
+        avatar="/jenny-professional.png"
         quote="Real users change everything."
         accent="from-amber-400 to-rose-500"
         projects={getProjects(professionalArc)}

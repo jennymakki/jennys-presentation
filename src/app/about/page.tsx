@@ -6,6 +6,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Contact from "@/components/blocks/contact";
 
+import { Sparkles } from "lucide-react";
+
 export default function About() {
   return (
     <div className="relative min-h-screen bg-[#2090C8] font-roboto overflow-hidden">
@@ -18,10 +20,13 @@ export default function About() {
       <main className="relative z-10 max-w-5xl mx-auto px-6 py-24 space-y-28">
         {/* HERO */}
         <section className="text-center space-y-10">
-          {/* SMALL LABEL */}
-          <p className="text-white/60 uppercase tracking-[0.3em] text-sm">
-            About me
-          </p>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Sparkles className="text-yellow-300" size={18} />
+
+            <p className="uppercase tracking-[0.3em] text-sm text-white/70">
+              About me
+            </p>
+          </div>
 
           {/* MAIN HEADING */}
           <h1 className="text-5xl md:text-6xl font-black leading-tight text-white">
@@ -30,9 +35,9 @@ export default function About() {
 
           {/* IMAGE ROW */}
           <div className="flex flex-col md:flex-row gap-6 items-center justify-center pt-4">
-            <ImageBubble src="/.png" rotate="-3deg" />
-            <ImageBubble src="/.png" rotate="2deg" />
-            <ImageBubble src="/.png" rotate="-1deg" />
+            <ImageBubble src="/silly1.png" rotate="-3deg" />
+            <ImageBubble src="/silly2.png" rotate="2deg" />
+            <ImageBubble src="/silly3.png" rotate="-1deg" />
           </div>
 
           {/* DESCRIPTION */}
@@ -111,7 +116,7 @@ export default function About() {
           />
         </section>
       </main>
-      <Contact/>
+      <Contact />
       <Footer />
     </div>
   );
