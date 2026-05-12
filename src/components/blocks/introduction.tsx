@@ -20,11 +20,11 @@ export default function Introduction() {
         bg-[linear-gradient(to_bottom,#ffffff,#f7fbff)]
       "
     >
-      {/* Background glows (GPU optimized) */}
+      {/* Background */ }
       <div className="absolute top-20 left-10 w-72 h-72 bg-[#2090C8]/10 blur-3xl rounded-full transform-gpu" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-200/20 blur-3xl rounded-full transform-gpu" />
 
-      {/* Particles (lighter + no animation) */}
+      {/* Particles */}
       <div className="absolute inset-0 opacity-30">
         {particles.map((p) => (
           <div
