@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <div className="relative min-h-screen bg-[#2090C8] font-roboto overflow-hidden">
-      {/* playful background blobs */}
+      {/* blobs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 blur-3xl rounded-full" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-300/10 blur-3xl rounded-full" />
 
