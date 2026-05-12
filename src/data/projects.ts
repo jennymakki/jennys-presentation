@@ -428,5 +428,54 @@ export const projects: Project[] = [
     snapshots: [],
     roleAndLearning:
       "This exercise was completed independently to deepen my understanding of algorithm design and data handling in Java. It improved my problem-solving skills and backend programming confidence.",
-}
+},
+{
+  title: "OICAN/LAYR – B2B Shopify Website (Internship)",
+  description:
+    "During my internship at OICAN/LAYR, I designed and developed a full B2B e-commerce website from scratch using Shopify. The project focused on creating a professional, scalable storefront tailored for business customers with emphasis on UX/UI and conversion-focused design.",
+  imageUrl: "/oican.png",
+  link: "",
+  liveDemo: "",
+  slug: "oican-b2b-shopify",
+  shortDescription:
+    "A B2B Shopify website designed and built during internship at OICAN.",
+  tags: ["Shopify", "Liquid", "UX/UI", "B2B", "E-commerce", "Figma", "Frontend"],
+  goal:
+    "The goal was to design and build a complete B2B e-commerce experience from the ground up, focusing on usability, clear product presentation, and a scalable Shopify structure suitable for business clients.",
+  keyFeatures: [
+    "Full Shopify store setup and customization",
+    "B2B-focused UX/UI design",
+    "Custom theme adjustments using Liquid",
+    "Responsive and mobile-friendly layout",
+    "Structured product and category pages",
+    "Design work from Figma to implementation",
+  ],
+  snapshots: [],
+  roleAndLearning:
+    "During my internship at OICAN I was responsible for designing the entire B2B website from scratch and implementing it in Shopify. I worked with UX/UI design principles, structured the information architecture, and translated designs into a functional Shopify theme. This experience strengthened my skills in e-commerce development, client-focused design, and real-world project delivery.",
+},
+{
+  title: "Personal Portfolio Website",
+  description:
+    "A modern personal portfolio website built with React, Next.js, and Tailwind CSS. The project focuses on performance, responsive design, and clear presentation of projects and experience through a clean and structured UI.",
+  imageUrl: "/portfolio.png",
+  link: "https://github.com/jennymakki/presentation",
+  liveDemo: "",
+  slug: "personal-portfolio",
+  shortDescription:
+    "A responsive personal portfolio built with React, Next.js, and Tailwind CSS.",
+  tags: ["React", "Next.js", "Tailwind CSS", "Portfolio", "Responsive", "Frontend"],
+  goal:
+    "The goal of this project was to design and develop a personal portfolio that showcases projects, experience, and skills in a structured and visually appealing way, while focusing on performance and reusable components.",
+  keyFeatures: [
+    "Responsive design for all screen sizes",
+    "Component-based architecture",
+    "Project filtering and dynamic rendering",
+    "Optimized performance with Next.js",
+    "Clean and modern UI with Tailwind CSS",
+  ],
+  snapshots: [],
+  roleAndLearning:
+    "I designed and developed this portfolio independently. The project strengthened my skills in Next.js, component structuring, and UI design, as well as how to present work in a clear and professional way.",
+},
 ];
