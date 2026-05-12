@@ -257,7 +257,7 @@ function StoryArcSection({
 
 function BackendSkillTree({ projects }: { projects: Project[] }) {
   return (
-    <section className="relative py-40 px-6">
+    <section className="relative py-40 px-6 bg-[#07111f]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
