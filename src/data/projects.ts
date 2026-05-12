@@ -459,7 +459,7 @@ export const projects: Project[] = [
   description:
     "A modern personal portfolio website built with React, Next.js, and Tailwind CSS. The project focuses on performance, responsive design, and clear presentation of projects and experience through a clean and structured UI.",
   imageUrl: "/portfolio.png",
-  link: "https://github.com/jennymakki/presentation",
+  link: "https://github.com/jennymakki/jennys-presentation",
   liveDemo: "",
   slug: "personal-portfolio",
   shortDescription:
