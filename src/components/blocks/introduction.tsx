@@ -6,7 +6,6 @@ import { skills } from "@/data/skills";
 import { Sparkles } from "lucide-react";
 
 export default function Introduction() {
-  // Reduced particles for performance + less repaint on mobile
   const particles = Array.from({ length: 15 }, (_, i) => ({
     id: i,
     top: `${(i * 17) % 100}%`,
@@ -40,7 +39,6 @@ export default function Introduction() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center space-y-10">
-
         {/* PROFILE CARD */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -67,14 +65,15 @@ export default function Introduction() {
             "
           >
             {/* IMAGE */}
-            <div className="relative flex-shrink-0">
-              <div className="absolute inset-0 rounded-full bg-[#2090C8]/20 blur-2xl scale-110 transform-gpu" />
+            <div className="relative flex-shrink-0 overflow-hidden rounded-[2rem]">
+              <div className="absolute inset-4 rounded-full bg-[#2090C8]/20 blur-2xl transform-gpu" />
 
               <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image
                   src="/JennyMakki.png"
                   alt="Jenny Makki"
                   fill
+                  priority
                   className="object-cover"
                 />
               </div>
