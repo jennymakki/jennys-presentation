@@ -226,7 +226,7 @@ export const projects: Project[] = [
       "I was responsible for building the site structure and templating logic using EJS. I also wrote and styled the content pages, focusing on layout clarity and responsiveness. This project helped reinforce backend templating and server-side rendering concepts.",
   },
   {
-  title: "Anders Eklund – Portfolio Website",
+  title: "Author's Portfolio Website",
   description:
     "A modern portfolio website built for a client using React and Next.js. The site focuses on clean presentation, responsive layouts, and clear content structure to showcase professional services and projects.",
 
