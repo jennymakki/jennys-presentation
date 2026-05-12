@@ -101,11 +101,6 @@ export default function Hero() {
             work together — and where the process is just as fun as the result.
           </p>
 
-          <p className="text-sm italic text-white/60">
-            For me, programming is a creative space where structure,
-            collaboration, and experimentation meet.
-          </p>
-
           <div className="flex gap-4 justify-center md:justify-start pt-2 pb-10">
             <Button
               variant="primary"
