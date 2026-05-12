@@ -70,9 +70,7 @@ export default function Projects() {
             >
               <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white">
                 Welcome to browse through my
-                <span className="block text-cyan-200">
-                  projects
-                </span>
+                <span className="block text-cyan-200">projects</span>
               </h1>
 
               <p className="text-white/80 text-lg leading-relaxed">
@@ -131,9 +129,16 @@ export default function Projects() {
                   key={project.title}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: i * 0.05 }}
-                  whileHover={{ y: -10, scale: 1.02 }}
-                  className="transition-all"
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeOut",
+                    delay: i * 0.05,
+                  }}
+                  whileHover={{
+                    y: -6,
+                    scale: 1.01,
+                  }}
                 >
                   <ProjectCard project={project} />
                 </motion.div>

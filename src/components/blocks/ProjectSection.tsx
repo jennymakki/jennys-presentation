@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
+import { useEffect, useState } from "react";
 
 import Button from "../ui/Button";
 import type { Project } from "@/data/projects";
@@ -63,15 +64,34 @@ const chapters = [
   },
 ];
 
-const stars = Array.from({ length: 40 }, (_, i) => ({
-  id: i,
-  top: `${(i * 17) % 100}%`,
-  left: `${(i * 23) % 100}%`,
-}));
-
 export default function ProjectSection({
   projects,
 }: ProjectSectionProps) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+    };
+  }, []);
+
+  const stars = Array.from(
+    { length: isMobile ? 10 : 24 },
+    (_, i) => ({
+      id: i,
+      top: `${(i * 17) % 100}%`,
+      left: `${(i * 23) % 100}%`,
+    })
+  );
+
   return (
     <section
       id="projects"
@@ -82,15 +102,20 @@ export default function ProjectSection({
       "
     >
       {/* Background blobs */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 blur-3xl rounded-full" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-300/10 blur-3xl rounded-full" />
+      <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 blur-xl rounded-full" />
+
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-300/10 blur-xl rounded-full" />
 
       {/* Stars */}
       <div className="absolute inset-0 opacity-20">
         {stars.map((star) => (
           <div
             key={star.id}
-            className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
+            className="
+              absolute w-1 h-1
+              bg-white rounded-full
+              md:animate-pulse
+            "
             style={{
               top: star.top,
               left: star.left,
@@ -101,9 +126,13 @@ export default function ProjectSection({
 
       {/* Header */}
       <motion.div
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.7,
+          ease: "easeOut",
+        }}
         className="relative z-10 flex flex-col items-center text-center mb-32"
       >
         <div className="flex items-center gap-3 mb-4">
@@ -119,14 +148,16 @@ export default function ProjectSection({
         </h2>
 
         <p className="text-white/80 mt-6 text-lg max-w-2xl leading-relaxed">
-          Not just projects — chapters of growth, experimentation,
-          creativity and becoming a better developer through building.
+          Not just projects — chapters of growth,
+          experimentation, creativity and becoming
+          a better developer through building.
         </p>
       </motion.div>
 
       {/* Timeline */}
       <div className="absolute left-1/2 top-0 h-full w-[2px] bg-white/10 hidden md:block" />
 
+      {/* Timeline items */}
       <div className="relative z-10 space-y-40 max-w-6xl mx-auto">
         {projects.map((project, index) => {
           const chapter = chapters[index % chapters.length];
@@ -145,9 +176,13 @@ export default function ProjectSection({
 
       {/* CTA */}
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.7,
+          ease: "easeOut",
+        }}
         className="flex flex-col items-center mt-40 relative z-10"
       >
         <p className="uppercase tracking-[0.3em] text-white/60 text-sm mb-5">
@@ -159,12 +194,17 @@ export default function ProjectSection({
         </h3>
 
         <motion.div
-          whileHover={{
-            scale: 1.06,
-          }}
+          whileHover={
+            !isMobile
+              ? {
+                  y: -2,
+                }
+              : {}
+          }
           whileTap={{
-            scale: 0.96,
+            scale: 0.97,
           }}
+          className="will-change-transform"
         >
           <Button
             variant="primary"
