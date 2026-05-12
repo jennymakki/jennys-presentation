@@ -41,7 +41,7 @@ export default function StoryArcSection({
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="absolute -top-16 left-1/2 -translate-x-1/2 z-20 max-w-[240px]"
+              className="absolute -top-25 left-1/2 -translate-x-1/2 z-20 max-w-[240px]"
             >
               <div className="relative bg-white text-gray-800 italic text-sm px-5 py-3 rounded-2xl shadow-lg text-center">
                 {quote}

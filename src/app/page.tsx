@@ -1,5 +1,4 @@
 "use client";
-import Header from "@/components/blocks/header";
 import Footer from "@/components/blocks/footer";
 import Introduction from "@/components/blocks/introduction";
 import Contact from "@/components/blocks/contact";
@@ -14,7 +13,6 @@ export default function Home() {
 
   return (
     <div className="bg-[#f5f5f5] min-h-screen font-roboto flex flex-col">
-      <Header />
 
       <section className="p0">
         <Hero />

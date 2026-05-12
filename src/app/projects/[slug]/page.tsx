@@ -8,7 +8,6 @@ import { Github, Globe, ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import { projects } from "@/data/projects";
-import Header from "@/components/blocks/header";
 import Footer from "@/components/blocks/footer";
 import Button from "@/components/ui/Button";
 
@@ -30,8 +29,6 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       {/* Glow */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 blur-3xl rounded-full" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-300/10 blur-3xl rounded-full" />
-
-      <Header />
 
       <main className="relative z-10 max-w-4xl mx-auto px-6 py-24 space-y-28">
         {/* HERO */}

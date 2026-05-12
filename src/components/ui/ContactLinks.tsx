@@ -40,7 +40,7 @@ export default function ContactLinks() {
       </div>
 
       <p className="text-white/60 text-sm mt-6 max-w-xs">
-        I usually respond within a few days. I am very excited to hear from you!
+        I am very excited to hear from you!
       </p>
 
     </div>

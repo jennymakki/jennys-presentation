@@ -1,6 +1,5 @@
 "use client";
 
-import Header from "@/components/blocks/header";
 import Footer from "@/components/blocks/footer";
 
 import ProjectsHero from "@/components/blocks/ProjectsHero";
@@ -27,7 +26,6 @@ const backendArc = [
 export default function ProjectsPage() {
   return (
     <main className="overflow-hidden">
-      <Header />
 
       <ProjectsHero />
 

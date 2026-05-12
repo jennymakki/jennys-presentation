@@ -1,6 +1,5 @@
 "use client";
 
-import Header from "@/components/blocks/header";
 import Footer from "@/components/blocks/footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -10,12 +9,10 @@ import { Sparkles } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="relative min-h-screen bg-[#2090C8] font-roboto overflow-hidden">
-      {/* blobs */}
+<div className="relative min-h-screen bg-[#2090C8] font-roboto overflow-x-hidden">
+          {/* blobs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 blur-3xl rounded-full" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-300/10 blur-3xl rounded-full" />
-
-      <Header />
 
       <main className="relative z-10 max-w-5xl mx-auto px-6 py-24 space-y-28">
         {/* HERO */}
