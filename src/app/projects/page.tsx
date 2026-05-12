@@ -8,6 +8,7 @@ import StoryArcSection from "@/components/blocks/StoryArcSection";
 import BackendSkillTree from "@/components/blocks/BackendSkillTree";
 
 import { projects } from "@/data/projects";
+import Contact from "@/components/blocks/contact";
 
 const getProjects = (slugs: string[]) =>
   projects.filter(p => slugs.includes(p.slug));
@@ -67,7 +68,7 @@ export default function ProjectsPage() {
       />
 
       <BackendSkillTree projects={getProjects(backendArc)} />
-
+      <Contact/>
       <Footer />
     </main>
   );
