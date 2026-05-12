@@ -3,10 +3,11 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { skills } from "@/data/skills";
-import {  Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 export default function Introduction() {
-  const particles = Array.from({ length: 40 }, (_, i) => ({
+  // Reduced particles for performance + less repaint on mobile
+  const particles = Array.from({ length: 15 }, (_, i) => ({
     id: i,
     top: `${(i * 17) % 100}%`,
     left: `${(i * 31) % 100}%`,
@@ -15,21 +16,21 @@ export default function Introduction() {
   return (
     <section
       className="
-        relative overflow-hidden
+        relative overflow-hidden contain-paint
         py-32 px-6 md:px-16
         bg-[linear-gradient(to_bottom,#ffffff,#f7fbff)]
       "
     >
-      {/* Background glows */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-[#2090C8]/10 blur-3xl rounded-full" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-200/20 blur-3xl rounded-full" />
+      {/* Background glows (GPU optimized) */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-[#2090C8]/10 blur-3xl rounded-full transform-gpu" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-200/20 blur-3xl rounded-full transform-gpu" />
 
-      {/* Particles */}
-      <div className="absolute inset-0 opacity-40">
+      {/* Particles (lighter + no animation) */}
+      <div className="absolute inset-0 opacity-30">
         {particles.map((p) => (
           <div
             key={p.id}
-            className="absolute w-1 h-1 bg-[#2090C8]/20 rounded-full animate-pulse"
+            className="absolute w-1 h-1 bg-[#2090C8]/20 rounded-full"
             style={{
               top: p.top,
               left: p.left,
@@ -38,25 +39,25 @@ export default function Introduction() {
         ))}
       </div>
 
-
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center space-y-10">
 
         {/* PROFILE CARD */}
         <motion.div
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7 }}
           className="relative w-full max-w-4xl"
         >
           {/* glow */}
           <div className="absolute inset-0 flex justify-center">
-            <div className="w-[500px] h-[300px] bg-[#2090C8]/10 blur-3xl rounded-full" />
+            <div className="w-[500px] h-[300px] bg-[#2090C8]/10 blur-3xl rounded-full transform-gpu" />
           </div>
 
           <div
             className="
               relative overflow-hidden
-              bg-white/80 backdrop-blur-2xl
+              bg-white/80 backdrop-blur-md md:backdrop-blur-2xl
               border border-white
               shadow-[0_20px_80px_rgba(31,41,55,0.12)]
               rounded-[2rem]
@@ -67,7 +68,7 @@ export default function Introduction() {
           >
             {/* IMAGE */}
             <div className="relative flex-shrink-0">
-              <div className="absolute inset-0 rounded-full bg-[#2090C8]/20 blur-2xl scale-110" />
+              <div className="absolute inset-0 rounded-full bg-[#2090C8]/20 blur-2xl scale-110 transform-gpu" />
 
               <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image
@@ -123,11 +124,8 @@ export default function Introduction() {
             {Object.entries(skills).map(([category, items]) => (
               <motion.div
                 key={category}
-                whileHover={{
-                  y: -8,
-                  scale: 1.02,
-                }}
-                transition={{ duration: 0.3 }}
+                whileHover={{ y: -6, scale: 1.01 }}
+                transition={{ duration: 0.25 }}
                 className="
                   group relative overflow-hidden
                   rounded-3xl
@@ -138,31 +136,9 @@ export default function Introduction() {
                 "
               >
                 {/* Top glow */}
-                <div
-                  className="
-                    absolute top-0 left-0
-                    w-full h-1
-                    bg-gradient-to-r
-                    from-[#2090C8]
-                    to-cyan-400
-                  "
-                />
-
-                {/* Hover glow */}
-                <div
-                  className="
-                    absolute inset-0
-                    bg-gradient-to-br
-                    from-[#2090C8]/5
-                    to-transparent
-                    opacity-0
-                    group-hover:opacity-100
-                    transition-opacity
-                  "
-                />
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#2090C8] to-cyan-400" />
 
                 <div className="relative z-10">
-                  {/* Badge */}
                   <div
                     className="
                       inline-flex items-center gap-2
@@ -178,7 +154,6 @@ export default function Introduction() {
                     {category}
                   </div>
 
-                  {/* Skills */}
                   <div className="flex flex-wrap gap-2">
                     {items.map((skill) => (
                       <span

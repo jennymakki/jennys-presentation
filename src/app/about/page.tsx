@@ -4,6 +4,7 @@ import Header from "@/components/blocks/header";
 import Footer from "@/components/blocks/footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Contact from "@/components/blocks/contact";
 
 export default function About() {
   return (
@@ -109,15 +110,8 @@ export default function About() {
             text="I like the idea that nothing is ever done — just improved until it feels right in both design and code."
           />
         </section>
-
-        {/* CLOSING */}
-        <section className="text-center space-y-4">
-          <h2 className="text-white text-3xl md:text-4xl font-bold">
-            Still building, still figuring things out
-          </h2>
-        </section>
       </main>
-
+      <Contact/>
       <Footer />
     </div>
   );

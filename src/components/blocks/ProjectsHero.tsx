@@ -23,10 +23,10 @@ export default function ProjectsHero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="absolute -top-16 left-1/2 -translate-x-1/2 z-20 max-w-[240px]"
+              className="absolute -top-16 left-1/2 -translate-x-1/2 z-20 max-w-[280px]"
             >
               <div className="relative bg-white text-gray-700 text-sm px-4 py-3 rounded-xl shadow-lg text-center">
-                Check out my projects
+                Welcome to check out my projects
                 <div className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-3 h-3 bg-white rotate-45" />
               </div>
             </motion.div>
