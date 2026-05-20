@@ -103,7 +103,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                       />
                     </div>
 
-                    <p className="p-6 text-white/80 text-sm md:text-base leading-relaxed">
+                    <p className="p-6 text-black/80 text-sm md:text-base leading-relaxed">
                       {snap.description}
                     </p>
                   </motion.div>

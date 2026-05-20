@@ -435,7 +435,7 @@ export const projects: Project[] = [
     "During my internship at OICAN/LAYR, I designed and developed a full B2B e-commerce website from scratch using Shopify. The project focused on creating a professional, scalable storefront tailored for business customers with emphasis on UX/UI and conversion-focused design.",
   imageUrl: "/oican.png",
   link: "",
-  liveDemo: "",
+  liveDemo: "https://layrprotection.com/",
   slug: "oican-b2b-shopify",
   shortDescription:
     "A B2B Shopify website designed and built during internship at OICAN.",
