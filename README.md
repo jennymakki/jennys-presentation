@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+A modern, responsive personal portfolio built with Next.js, React and TypeScript.
 
-First, run the development server:
+The project showcases my work, skills and experience through a structured, component-based architecture with a focus on performance, scalability and clean UI design.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This portfolio was designed and developed to present my projects and skills in a clear and structured way. It focuses on reusable UI components, maintainable architecture and a smooth user experience across all devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The application is fully built with TypeScript and follows a modular structure using components, UI blocks and data-driven content.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Responsive design for all screen sizes
+- Component-based architecture (UI, blocks, layout)
+- Data-driven project and skills sections (TypeScript)
+- Dynamic rendering of content
+- Optimized performance with Next.js
+- Contact form with API route using Resend
+- Clean and modern UI built with Tailwind CSS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project is structured to improve scalability and maintainability:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **components/** → Reusable UI components
+- **blocks/** → Page-level layout sections
+- **data/** → Centralized TypeScript data for projects and skills
+- **pages/app routes** → Application routing and structure
+- **api/** → Contact form endpoint (Resend integration)
+
+---
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Resend (Email API)
+
+---
+
+## Key Learnings
+
+- Building scalable component-based architecture
+- Structuring data-driven UIs with TypeScript
+- Creating reusable UI patterns and layout blocks
+- Working with API routes in Next.js
+- Integrating external services (Resend) for contact handling
+- Improving UI/UX and performance in production-ready apps
