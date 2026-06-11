@@ -18,53 +18,80 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-  title: "UI System / Component Library",
-  description:
-    "A reusable UI system built with React and TypeScript, focusing on component architecture, variants, and state-driven design. It demonstrates how to build scalable and consistent user interfaces using a design system approach.",
+    title: "Project Manager System",
+    description:
+      "A full-stack project management application built with React, TypeScript, Spring Boot and JWT authentication. Users can manage boards, lists, tasks and comments through a modern drag-and-drop interface. The project follows a clean layered architecture and demonstrates full-stack development, API design and scalable application structure.",
 
-  imageUrl: "/JennyUISystem.png",
+    imageUrl: "/project-manager-system.png",
 
-  link: "https://github.com/jennymakki/jenny-makki-ui",
-  liveDemo: "https://jenny-makki-ui.vercel.app/",
+    link: "https://github.com/jennymakki/project-manager-system",
+    liveDemo: "https://project-manager-system-tawny.vercel.app",
 
-  slug: "ui-system",
+    slug: "project-manager-system",
 
-  shortDescription:
-    "A reusable UI system with components, variants, and state-driven UI.",
+    shortDescription:
+      "A full-stack project management tool built with React and Spring Boot.",
 
-  tags: ["React", "TypeScript", "Design System", "UI", "Components"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Spring Boot",
+      "Java",
+      "JWT",
+      "REST API",
+      "Full-Stack",
+      "Drag & Drop",
+    ],
 
-  goal:
-    "The goal of this project was to explore how to build a scalable UI system using reusable components, consistent patterns, and state-driven interactions.",
+    goal: "The goal of this project was to deepen my understanding of full-stack development by building a complete project management system with authentication, scalable architecture, reusable frontend patterns and a secure backend API.",
 
-  keyFeatures: [
-    "Reusable Button, Input, Card, and Modal components",
-    "Component variants for size, style, and states",
-    "State-driven UI interactions",
-    "Chat demo showing real-world component usage",
-    "Interactive playground for testing UI behavior",
-    "Consistent styling with Tailwind CSS",
-  ],
-  snapshots: [
-    {
-      imageUrl: "/JennyUISystem.png",
-      description: "Overview of the UI system homepage and component structure.",
-    },
-    {
-      imageUrl: "/snapshots/ButtonPlayground.png",
-      description: "Interactive playground where button variants and states are tested.",
-    },
-    {
-      imageUrl: "/snapshots/Chat.png",
-      description: "Chat demo showing real-world usage of components in an app context.",
-    },
-  ],
+    keyFeatures: [
+      "JWT authentication with Spring Security",
+      "User registration and login",
+      "Protected routes and secure API access",
+      "Create, edit and delete project boards",
+      "Task management with drag-and-drop functionality",
+      "Comments on tasks",
+      "Responsive design with light and dark mode",
+      "Reusable UI components and custom design system",
+      "Layered backend architecture using Controller, Service and Repository layers",
+    ],
 
-  roleAndLearning:
-    "I built this project independently to deepen my understanding of component architecture and design systems. It strengthened my ability to create reusable UI patterns, manage component state, and design scalable frontend structures.",
-  featured: true,
-  accent: "red",
-},
+    uiArchitecture: [
+      "Feature-based frontend architecture",
+      "Reusable UI components and design tokens",
+      "Custom React hooks for shared logic",
+      "Context API for authentication and session management",
+      "ProtectedRoute pattern for route security",
+      "Scalable folder structure focused on maintainability",
+    ],
+
+    snapshots: [
+      {
+        imageUrl: "/project-manager-system.png",
+        description:
+          "Dashboard displaying user-specific project boards after authentication.",
+      },
+      {
+        imageUrl: "/snapshots/ProjectManagerBoard.png",
+        description:
+          "Project board with drag-and-drop task management across multiple lists.",
+      },
+/*       {
+        imageUrl: "/snapshots/TaskComments.png",
+        description:
+          "Task details with comment functionality and collaborative workflow support.",
+      }, */
+    ],
+
+    roleAndLearning:
+      "I designed and built the entire application independently, including both the React frontend and Spring Boot backend. Through this project I gained hands-on experience with JWT authentication, Spring Security, REST API design, layered architecture, drag-and-drop interactions, state management and full-stack application development. It also strengthened my understanding of clean code practices, testing principles and building scalable software systems.",
+
+    featured: true,
+    accent: "blue",
+  },
+
+
   {
     title: "Grocery Helper",
     description:
@@ -226,50 +253,100 @@ export const projects: Project[] = [
       "I was responsible for building the site structure and templating logic using EJS. I also wrote and styled the content pages, focusing on layout clarity and responsiveness. This project helped reinforce backend templating and server-side rendering concepts.",
   },
   {
-  title: "Author's Portfolio Website",
-  description:
-    "A modern portfolio website built for a client using React and Next.js. The site focuses on clean presentation, responsive layouts, and clear content structure to showcase professional services and projects.",
+    title: "Author's Portfolio Website",
+    description:
+      "A modern portfolio website built for a client using React and Next.js. The site focuses on clean presentation, responsive layouts, and clear content structure to showcase professional services and projects.",
 
-  imageUrl: "/anderseklund.png",
+    imageUrl: "/anderseklund.png",
 
-  link: "https://github.com/jennymakki/anderseklund",
-  liveDemo: "https://anderseklund.vercel.app/",
+    link: "https://github.com/jennymakki/anderseklund",
+    liveDemo: "https://anderseklund.vercel.app/",
 
-  slug: "anders-eklund-portfolio",
+    slug: "anders-eklund-portfolio",
 
-  shortDescription:
-    "A responsive portfolio website built with Next.js and React.",
+    shortDescription:
+      "A responsive portfolio website built with Next.js and React.",
 
-  tags: [
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Responsive",
-    "Portfolio",
-  ],
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Responsive",
+      "Portfolio",
+    ],
 
-  goal:
-    "The goal of this project was to create a professional and responsive portfolio website with a strong visual structure and reusable UI patterns. The focus was on performance, clean design, and a smooth user experience across devices.",
+    goal: "The goal of this project was to create a professional and responsive portfolio website with a strong visual structure and reusable UI patterns. The focus was on performance, clean design, and a smooth user experience across devices.",
 
-  keyFeatures: [
-    "Responsive design for desktop and mobile",
-    "Reusable UI components",
-    "Modern layout and typography",
-    "Optimized image handling",
-    "Clear project and content presentation",
-    "Fast and accessible user experience",
-  ],
+    keyFeatures: [
+      "Responsive design for desktop and mobile",
+      "Reusable UI components",
+      "Modern layout and typography",
+      "Optimized image handling",
+      "Clear project and content presentation",
+      "Fast and accessible user experience",
+    ],
 
-  snapshots: [
-  ],
+    snapshots: [],
 
-  roleAndLearning:
-    "I designed and developed the project independently, focusing on reusable component architecture, responsive layouts, and clean UI structure. This project strengthened my skills in modern frontend development, component composition, and building production-ready portfolio experiences.",
+    roleAndLearning:
+      "I designed and developed the project independently, focusing on reusable component architecture, responsive layouts, and clean UI structure. This project strengthened my skills in modern frontend development, component composition, and building production-ready portfolio experiences.",
 
-  featured: true,
-  accent: "blue",
-},
+    featured: true,
+    accent: "blue",
+  },
+
+    {
+    title: "UI System / Component Library",
+    description:
+      "A reusable UI system built with React and TypeScript, focusing on component architecture, variants, and state-driven design. It demonstrates how to build scalable and consistent user interfaces using a design system approach.",
+
+    imageUrl: "/JennyUISystem.png",
+
+    link: "https://github.com/jennymakki/jenny-makki-ui",
+    liveDemo: "https://jenny-makki-ui.vercel.app/",
+
+    slug: "ui-system",
+
+    shortDescription:
+      "A reusable UI system with components, variants, and state-driven UI.",
+
+    tags: ["React", "TypeScript", "Design System", "UI", "Components"],
+
+    goal: "The goal of this project was to explore how to build a scalable UI system using reusable components, consistent patterns, and state-driven interactions.",
+
+    keyFeatures: [
+      "Reusable Button, Input, Card, and Modal components",
+      "Component variants for size, style, and states",
+      "State-driven UI interactions",
+      "Chat demo showing real-world component usage",
+      "Interactive playground for testing UI behavior",
+      "Consistent styling with Tailwind CSS",
+    ],
+    snapshots: [
+      {
+        imageUrl: "/JennyUISystem.png",
+        description:
+          "Overview of the UI system homepage and component structure.",
+      },
+      {
+        imageUrl: "/snapshots/ButtonPlayground.png",
+        description:
+          "Interactive playground where button variants and states are tested.",
+      },
+      {
+        imageUrl: "/snapshots/Chat.png",
+        description:
+          "Chat demo showing real-world usage of components in an app context.",
+      },
+    ],
+
+    roleAndLearning:
+      "I built this project independently to deepen my understanding of component architecture and design systems. It strengthened my ability to create reusable UI patterns, manage component state, and design scalable frontend structures.",
+    featured: true,
+    accent: "red",
+  },
+
   {
     title: "To Do App – Frontend Version (v1)",
     description:
@@ -428,54 +505,67 @@ export const projects: Project[] = [
     snapshots: [],
     roleAndLearning:
       "This exercise was completed independently to deepen my understanding of algorithm design and data handling in Java. It improved my problem-solving skills and backend programming confidence.",
-},
-{
-  title: "OICAN/LAYR – B2B Shopify Website (Internship)",
-  description:
-    "During my internship at OICAN/LAYR, I designed and developed a full B2B e-commerce website from scratch using Shopify. The project focused on creating a professional, scalable storefront tailored for business customers with emphasis on UX/UI and conversion-focused design.",
-  imageUrl: "/oican.png",
-  link: "",
-  liveDemo: "https://layrprotection.com/",
-  slug: "oican-b2b-shopify",
-  shortDescription:
-    "A B2B Shopify website designed and built during internship at OICAN.",
-  tags: ["Shopify", "Liquid", "UX/UI", "B2B", "E-commerce", "Figma", "Frontend"],
-  goal:
-    "The goal was to design and build a complete B2B e-commerce experience from the ground up, focusing on usability, clear product presentation, and a scalable Shopify structure suitable for business clients.",
-  keyFeatures: [
-    "Full Shopify store setup and customization",
-    "B2B-focused UX/UI design",
-    "Custom theme adjustments using Liquid",
-    "Responsive and mobile-friendly layout",
-    "Structured product and category pages",
-    "Design work from Figma to implementation",
-  ],
-  snapshots: [],
-  roleAndLearning:
-    "During my internship at OICAN I was responsible for designing the entire B2B website from scratch and implementing it in Shopify. I worked with UX/UI design principles, structured the information architecture, and translated designs into a functional Shopify theme. This experience strengthened my skills in e-commerce development, client-focused design, and real-world project delivery.",
-},
-{
-  title: "Personal Portfolio Website",
-  description:
-    "A modern personal portfolio website built with React, Next.js, and Tailwind CSS. The project focuses on performance, responsive design, and clear presentation of projects and experience through a clean and structured UI.",
-  imageUrl: "/portfolio.png",
-  link: "https://github.com/jennymakki/jennys-presentation",
-  liveDemo: "",
-  slug: "personal-portfolio",
-  shortDescription:
-    "A responsive personal portfolio built with React, Next.js, and Tailwind CSS.",
-  tags: ["React", "Next.js", "Tailwind CSS", "Portfolio", "Responsive", "Frontend"],
-  goal:
-    "The goal of this project was to design and develop a personal portfolio that showcases projects, experience, and skills in a structured and visually appealing way, while focusing on performance and reusable components.",
-  keyFeatures: [
-    "Responsive design for all screen sizes",
-    "Component-based architecture",
-    "Project filtering and dynamic rendering",
-    "Optimized performance with Next.js",
-    "Clean and modern UI with Tailwind CSS",
-  ],
-  snapshots: [],
-  roleAndLearning:
-    "I designed and developed this portfolio independently. The project strengthened my skills in Next.js, component structuring, and UI design, as well as how to present work in a clear and professional way.",
-},
+  },
+  {
+    title: "OICAN/LAYR – B2B Shopify Website (Internship)",
+    description:
+      "During my internship at OICAN/LAYR, I designed and developed a full B2B e-commerce website from scratch using Shopify. The project focused on creating a professional, scalable storefront tailored for business customers with emphasis on UX/UI and conversion-focused design.",
+    imageUrl: "/oican.png",
+    link: "",
+    liveDemo: "https://layrprotection.com/",
+    slug: "oican-b2b-shopify",
+    shortDescription:
+      "A B2B Shopify website designed and built during internship at OICAN.",
+    tags: [
+      "Shopify",
+      "Liquid",
+      "UX/UI",
+      "B2B",
+      "E-commerce",
+      "Figma",
+      "Frontend",
+    ],
+    goal: "The goal was to design and build a complete B2B e-commerce experience from the ground up, focusing on usability, clear product presentation, and a scalable Shopify structure suitable for business clients.",
+    keyFeatures: [
+      "Full Shopify store setup and customization",
+      "B2B-focused UX/UI design",
+      "Custom theme adjustments using Liquid",
+      "Responsive and mobile-friendly layout",
+      "Structured product and category pages",
+      "Design work from Figma to implementation",
+    ],
+    snapshots: [],
+    roleAndLearning:
+      "During my internship at OICAN I was responsible for designing the entire B2B website from scratch and implementing it in Shopify. I worked with UX/UI design principles, structured the information architecture, and translated designs into a functional Shopify theme. This experience strengthened my skills in e-commerce development, client-focused design, and real-world project delivery.",
+  },
+  {
+    title: "Personal Portfolio Website",
+    description:
+      "A modern personal portfolio website built with React, Next.js, and Tailwind CSS. The project focuses on performance, responsive design, and clear presentation of projects and experience through a clean and structured UI.",
+    imageUrl: "/portfolio.png",
+    link: "https://github.com/jennymakki/jennys-presentation",
+    liveDemo: "",
+    slug: "personal-portfolio",
+    shortDescription:
+      "A responsive personal portfolio built with React, Next.js, and Tailwind CSS.",
+    tags: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Portfolio",
+      "Responsive",
+      "Frontend",
+    ],
+    goal: "The goal of this project was to design and develop a personal portfolio that showcases projects, experience, and skills in a structured and visually appealing way, while focusing on performance and reusable components.",
+    keyFeatures: [
+      "Responsive design for all screen sizes",
+      "Component-based architecture",
+      "Project filtering and dynamic rendering",
+      "Optimized performance with Next.js",
+      "Clean and modern UI with Tailwind CSS",
+    ],
+    snapshots: [],
+    roleAndLearning:
+      "I designed and developed this portfolio independently. The project strengthened my skills in Next.js, component structuring, and UI design, as well as how to present work in a clear and professional way.",
+  },
 ];

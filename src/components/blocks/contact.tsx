@@ -9,6 +9,7 @@ import ContactLinks from "../ui/ContactLinks";
 export default function Contact() {
   return (
     <section
+      id="contact"
       className="
         relative overflow-hidden
         py-32 px-6 md:px-16

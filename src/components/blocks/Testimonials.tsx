@@ -6,6 +6,12 @@ import { Quote, Sparkles } from "lucide-react";
 
 const testimonials = [
   {
+    text: "Jenny is a pleasure to work with. She is attentive, solution-oriented, and highly adaptable, always bringing a positive mindset to new challenges. Her ability to combine efficiency with attention to detail consistently results in high-quality work. Throughout our collaboration, she demonstrated strong technical skills, reliability, and a genuine willingness to learn and contribute. It has been an excellent experience working with her.",
+    author: "Sarah Hellström",
+    role: "Supervisor at LAYR",
+    image: "/testimonials/happy3.png",
+  },
+  {
     text: "It has been a pleasure working with Jenny. She brings a positive energy to the team, consistently demonstrates attention to detail, and is always focused on achieving results.",
     author: "Henrik Mattsson",
     role: "Project Collaborator",
@@ -52,13 +58,13 @@ export default function Testimonials() {
         </h2>
 
         <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
-          Feedback from collaborators and projects I’ve had the pleasure to work on.
+          Feedback from collaborators and projects I’ve had the pleasure to work
+          on.
         </p>
       </motion.div>
 
       {/* CONTENT */}
       <div className="relative z-10 space-y-24 max-w-5xl mx-auto">
-
         {testimonials.map((t, i) => (
           <motion.div
             key={t.author}
@@ -70,10 +76,8 @@ export default function Testimonials() {
               ${i % 2 === 1 ? "md:flex-row-reverse" : ""}
             `}
           >
-
             {/* AVATAR */}
             <div className="relative flex-shrink-0">
-
               {/* soft glow */}
               <div className="absolute inset-0 bg-[#2090C8]/10 blur-2xl rounded-full scale-110" />
 
@@ -116,7 +120,6 @@ export default function Testimonials() {
                 <p className="text-sm text-[#2090C8]">{t.role}</p>
               </div>
             </motion.div>
-
           </motion.div>
         ))}
       </div>

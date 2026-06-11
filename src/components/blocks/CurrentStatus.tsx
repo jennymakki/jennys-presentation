@@ -86,19 +86,26 @@ export default function CurrentStatus() {
           "
         >
           <p className="text-black/90 text-lg leading-relaxed">
-            I’m currently doing my internship at{" "}
-            <span className="font-semibold text-[#2090C8]">LAYR</span>, where
-            I’m building their B2B platform with a focus on scalable frontend
-            architecture and clean UI systems.
+            I’ve recently completed my education and internship and am now
+            actively seeking my first role as a full-stack
+            developer.
           </p>
           <p className="text-black/80 text-lg leading-relaxed mt-4">
-            Alongside this, I’m improving my React skills — especially component
-            design, reusable UI patterns, and building consistent design systems
-            that scale.
+            Right now, I’m focused on building Project Manager System — a
+            full-stack application inspired by modern project management tools.
+            It’s built with React, TypeScript, Spring Boot, JWT authentication
+            and a clean layered architecture.
           </p>
           <p className="text-black/80 text-lg leading-relaxed mt-4">
-            My focus is growing as a frontend developer where structure,
-            usability and visual clarity meet.
+            The project allows users to manage boards, tasks and comments
+            through a responsive drag-and-drop interface while exploring
+            concepts such as authentication, REST API design, testing, reusable
+            components and scalable application architecture.
+          </p>
+          <p className="text-black/80 text-lg leading-relaxed mt-4">
+            I enjoy creating intuitive user experiences while building robust
+            systems behind the scenes, and I’m always looking for new
+            opportunities to learn, collaborate and grow as a developer.
           </p>
           {/* accent line */}
           <div className="mt-8 w-16 h-[2px] bg-[#2090C8]/40" />

@@ -14,7 +14,7 @@ const getProjects = (slugs: string[]) =>
 
 const frontendArc = ["To-do-app", "Teachers-site", "ESC"];
 const interactionArc = ["wordle-game", "ui-system"];
-const fullstackArc = ["grocery-helper", "kino-movie-theatre"];
+const fullstackArc = ["project-manager-system", "grocery-helper", "kino-movie-theatre"];
 const professionalArc = ["anders-eklund-portfolio", "oican-b2b-shopify", "personal-portfolio"];
 const backendArc = [
   "To-do-app-java",
