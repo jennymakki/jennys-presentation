@@ -224,7 +224,7 @@ export const projects: Project[] = [
       "This is an educational science website built with EJS templating on Node.js. It offers study content and helps students explore the scientific topics they are studying. The site features a clean, user-friendly design with responsive layouts for easy access across devices.",
     imageUrl: "/Vetenskapsrum.png",
     link: "https://github.com/jennymakki/Makkis-vetenskaps-rum",
-    liveDemo: "https://makkis-vetenskapsrum.onrender.com/",
+    liveDemo: "https://makkis-vetenskaps-rum-1.vercel.app/",
     slug: "Teachers-site",
     shortDescription:
       "A science website for students with structured subjects, built using EJS and Node.js.",
