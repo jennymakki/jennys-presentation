@@ -218,40 +218,62 @@ export const projects: Project[] = [
     roleAndLearning:
       "I implemented the full logic for comparing guesses with the solution word and color-coding results. I also built the interactive keyboard from scratch and designed the score tracking functionality. This project strengthened my understanding of React component state and conditional rendering.",
   },
-  {
-    title: "Teacher's Site",
-    description:
-      "This is an educational science website built with EJS templating on Node.js. It offers study content and helps students explore the scientific topics they are studying. The site features a clean, user-friendly design with responsive layouts for easy access across devices.",
-    imageUrl: "/Vetenskapsrum.png",
-    link: "https://github.com/jennymakki/Makkis-vetenskaps-rum",
-    liveDemo: "https://makkis-vetenskaps-rum-1.vercel.app/",
-    slug: "Teachers-site",
-    shortDescription:
-      "A science website for students with structured subjects, built using EJS and Node.js.",
-    tags: ["EJS", "Node.js", "Express", "Responsive", "Educational", "Figma"],
-    goal: "This site was created to support classroom learning with a digital companion for students. The main goal was to offer categorized scientific content in a clean and user-friendly format using server-side rendering.",
-    keyFeatures: [
-      "Server-side rendering with EJS",
-      "Categorized subject navigation",
-      "Mobile-friendly responsive layout",
-      "Clean and readable content display",
-      "Ability to download presentations and other materials",
-    ],
-    snapshots: [
-      {
-        imageUrl: "/snapshots/SciStart.png",
-        description:
-          "This is the mobile view of the start page. I aimed to make it feel inviting and intuitive, using themed colors and icons for each subject to support learning and navigation.",
-      },
-      {
-        imageUrl: "/snapshots/SciSubject.png",
-        description:
-          "When a user selects a subject, all units are displayed along with their corresponding lessons and study materials.",
-      },
-    ],
-    roleAndLearning:
-      "I was responsible for building the site structure and templating logic using EJS. I also wrote and styled the content pages, focusing on layout clarity and responsiveness. This project helped reinforce backend templating and server-side rendering concepts.",
-  },
+{
+  title: "Teacher's Site",
+  description:
+    "A modern educational science platform built with Next.js, React, TypeScript, and Tailwind CSS. The website provides structured learning materials in Biology, Chemistry, and Natural Science, allowing students to easily navigate courses and download lesson resources through a clean and responsive interface.",
+
+  imageUrl: "/Vetenskapsrum.png",
+
+  link: "https://github.com/jennymakki/Makkis-vetenskaps-rum",
+
+  liveDemo: "https://makkis-vetenskaps-rum-1.vercel.app/",
+
+  slug: "teachers-site",
+
+  shortDescription:
+    "A modern science learning platform with downloadable lesson materials, built using Next.js and TypeScript.",
+
+  tags: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Education",
+    "Responsive Design",
+    "Vercel",
+    "Frontend",
+  ],
+
+  goal:
+    "The goal of this project was to create a modern digital learning platform where students can easily access and download educational resources. The focus was on improving usability, responsiveness, and maintainability through reusable components and a scalable Next.js architecture.",
+
+  keyFeatures: [
+    "Built with Next.js App Router",
+    "Responsive design for mobile and desktop",
+    "Structured navigation between science subjects",
+    "Downloadable lesson materials and presentations",
+    "Reusable React components",
+    "Modern UI built with Tailwind CSS",
+    "SEO-friendly metadata configuration",
+  ],
+
+  snapshots: [
+    {
+      imageUrl: "/snapshots/SciStart.png",
+      description:
+        "The landing page introduces students to the platform with clear subject navigation, modern card-based layouts, and a science-inspired visual design.",
+    },
+    {
+      imageUrl: "/snapshots/SciSubject.png",
+      description:
+        "Each subject page presents available courses and learning materials in a structured and easy-to-navigate format.",
+    },
+  ],
+
+  roleAndLearning:
+    "I designed and developed the entire application, including the UI, component architecture, routing structure, and content organization. During the project, I strengthened my skills in Next.js, TypeScript, Tailwind CSS, responsive design, component-based development, and modern deployment workflows using Vercel.",
+},
   {
     title: "Author's Portfolio Website",
     description:
