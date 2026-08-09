@@ -560,6 +560,84 @@ export const projects: Project[] = [
     roleAndLearning:
       "During my internship at OICAN I was responsible for designing the entire B2B website from scratch and implementing it in Shopify. I worked with UX/UI design principles, structured the information architecture, and translated designs into a functional Shopify theme. This experience strengthened my skills in e-commerce development, client-focused design, and real-world project delivery.",
   },
+  
+  {
+  title: "Makki Studio – Företagswebbplats",
+  description:
+    "En modern företagswebbplats för Makki Studio, designad och utvecklad för att presentera tjänster, projekt och priser på ett tydligt och professionellt sätt. Webbplatsen kombinerar webbdesign, UX och modern webbutveckling med fokus på prestanda, SEO och tillgänglighet.",
+
+  imageUrl: "/makki-studio.png",
+
+  link: "",
+  liveDemo: "https://www.makkistudio.se",
+
+  slug: "makki-studio",
+
+  shortDescription:
+    "Makki Studios egen företagswebbplats – designad och utvecklad med Next.js, TypeScript och Tailwind CSS.",
+
+  tags: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "UX/UI",
+    "SEO",
+    "Accessibility",
+    "Webbdesign",
+    "Webbutveckling",
+  ],
+
+  goal:
+    "Målet var att skapa en professionell företagswebbplats för Makki Studio som tydligt kommunicerar tjänster, priser och tidigare projekt, samtidigt som webbplatsen är snabb, tillgänglig och lätt för både människor, sökmotorer och AI-agenter att förstå.",
+
+  keyFeatures: [
+    "Responsiv design för mobil, surfplatta och desktop",
+    "Tydlig presentation av tjänster och priser",
+    "Projektportfolio med detaljerade case",
+    "SEO-optimerad metadata och canonical URLs",
+    "Schema.org-strukturerad data",
+    "Tillgänglighetsanpassad HTML och formulär",
+    "AI-agent-vänlig struktur och navigation",
+    "Kontaktformulär med spam-skydd",
+    "Next.js App Router",
+    "Komponentbaserad frontend",
+  ],
+
+  uiArchitecture: [
+    "Återanvändbara React-komponenter",
+    "Komponentbaserat designsystem",
+    "Semantisk HTML-struktur",
+    "Responsiva Tailwind CSS-layouts",
+    "Återanvändbara CTA-, Navbar- och Footer-komponenter",
+    "Strukturerad metadata och Schema.org",
+  ],
+
+  snapshots: [
+    {
+      imageUrl: "/snapshots/makki-home.png",
+      description:
+        "Makki Studios startsida med tydlig presentation av webbdesign, webbutveckling, projekt och tjänster.",
+    },
+    {
+      imageUrl: "/snapshots/makki-services.png",
+      description:
+        "Tjänste- och prissida med tydliga webbpaket för företag.",
+    },
+    {
+      imageUrl: "/snapshots/makki-contact.png",
+      description:
+        "Kontaktformulär där potentiella kunder enkelt kan beskriva sitt projekt.",
+    },
+  ],
+
+  roleAndLearning:
+    "Jag designade och utvecklade hela webbplatsen själv, från informationsarkitektur och visuell identitet till frontend, SEO, strukturerad data och tillgänglighet. Projektet har gett mig möjlighet att kombinera mina kunskaper inom UX/UI, React, Next.js och TypeScript med ett verkligt affärsmål: att göra Makki Studio tydligt för både potentiella kunder och moderna sök- och AI-system.",
+
+  featured: true,
+  accent: "green",
+},
+
   {
     title: "Personal Portfolio Website",
     description:
